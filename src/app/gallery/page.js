@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { useState } from 'react';
+import { FadeIn, ScaleIn, StaggerContainer, StaggerItem } from '@/components/AnimatedSection';
 
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -25,35 +26,38 @@ export default function Gallery() {
   return (
     <main className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-[#4C82C3] text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-center">Gallery</h1>
-          <p className="text-xl md:text-2xl text-center max-w-4xl mx-auto">
-            Glimpses from ICPC competitions around the world
-          </p>
-        </div>
-      </section>
+      <FadeIn>
+        <section className="bg-[#4C82C3] text-white py-20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-center">Gallery</h1>
+            <p className="text-xl md:text-2xl text-center max-w-4xl mx-auto">
+              Glimpses from ICPC competitions around the world
+            </p>
+          </div>
+        </section>
+      </FadeIn>
 
       {/* Gallery Grid */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {images.map((image) => (
-              <div
-                key={image.id}
-                className="relative aspect-[4/3] bg-gray-200 rounded-lg overflow-hidden shadow-lg cursor-pointer transform hover:scale-105 transition-transform duration-300"
-                onClick={() => setSelectedImage(image)}
-              >
-                <Image
-                  src={`/gallery/${image.filename}`}
-                  alt={image.alt}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                />
-              </div>
+              <StaggerItem key={image.id}>
+                <div
+                  className="relative aspect-[4/3] bg-gray-200 rounded-lg overflow-hidden shadow-lg cursor-pointer transform hover:scale-105 transition-transform duration-300"
+                  onClick={() => setSelectedImage(image)}
+                >
+                  <Image
+                    src={`/gallery/${image.filename}`}
+                    alt={image.alt}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  />
+                </div>
+              </StaggerItem>
             ))}
-          </div>
+          </StaggerContainer>
         </div>
       </section>
 
@@ -85,20 +89,24 @@ export default function Gallery() {
       )}
 
       {/* Call to Action */}
-      <section className="py-16 bg-[#4C82C3] text-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6">Be Part of ICPC Sri Lanka 2026</h2>
-          <p className="text-xl mb-8">
-            Create your own memories at Sri Lanka&apos;s first ICPC competition
-          </p>
-          <a
-            href="/registration"
-            className="inline-block bg-[#FDBA11] text-[#4C82C3] px-8 py-4 rounded-full text-lg font-bold hover:bg-[#FDBA11]/90 transition-all duration-300 transform hover:scale-105"
-          >
-            Register Your Team
-          </a>
-        </div>
-      </section>
+      <FadeIn>
+        <section className="py-16 bg-[#4C82C3] text-white">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 className="text-4xl font-bold mb-6">Be Part of ICPC Sri Lanka 2026</h2>
+            <p className="text-xl mb-8">
+              Create your own memories at Sri Lanka&apos;s first ICPC competition
+            </p>
+            <ScaleIn delay={0.3}>
+              <a
+                href="/registration"
+                className="inline-block bg-[#FDBA11] text-[#4C82C3] px-8 py-4 rounded-full text-lg font-bold hover:bg-[#FDBA11]/90 transition-all duration-300 transform hover:scale-105"
+              >
+                Register Your Team
+              </a>
+            </ScaleIn>
+          </div>
+        </section>
+      </FadeIn>
     </main>
   );
 }
