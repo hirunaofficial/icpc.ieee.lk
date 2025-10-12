@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 import { 
   FaUsers, 
@@ -10,204 +12,236 @@ import {
   FaMapMarkerAlt, 
   FaEnvelope 
 } from 'react-icons/fa';
-
-export const metadata = {
-  title: 'Registration | ICPC Sri Lanka 2026',
-  description: 'Register your team for ICPC Sri Lanka 2026',
-};
+import { FadeIn, ScaleIn, StaggerContainer, StaggerItem } from '@/components/AnimatedSection';
 
 export default function Registration() {
   return (
     <main className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-[#4C82C3] text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-center">Registration</h1>
-          <p className="text-xl md:text-2xl text-center max-w-4xl mx-auto">
-            Ready to compete? Here&apos;s how to register your team
-          </p>
-        </div>
-      </section>
+      <FadeIn>
+        <section className="bg-[#4C82C3] text-white py-20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-center">Registration</h1>
+            <p className="text-xl md:text-2xl text-center max-w-4xl mx-auto">
+              Ready to compete? Here&apos;s how to register your team
+            </p>
+          </div>
+        </section>
+      </FadeIn>
 
       {/* Registration Steps */}
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">Registration Process</h2>
+          <FadeIn>
+            <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">Registration Process</h2>
+          </FadeIn>
           
-          <div className="space-y-8">
-            <RegistrationStep
-              number="1"
-              title="Register Globally"
-              description="Register your team at the official ICPC website"
-              details={[
-                'Visit the ICPC official registration portal',
-                'Create an account for your team',
-                'Fill in team and member details',
-                'Your coach must complete the registration'
-              ]}
-              buttonText="Visit ICPC Website"
-              buttonLink="https://icpc.global"
-              external={true}
-            />
+          <StaggerContainer className="space-y-8">
+            <StaggerItem>
+              <RegistrationStep
+                number="1"
+                title="Register Globally"
+                description="Register your team at the official ICPC website"
+                details={[
+                  'Visit the ICPC official registration portal',
+                  'Create an account for your team',
+                  'Fill in team and member details',
+                  'Your coach must complete the registration'
+                ]}
+                buttonText="Visit ICPC Website"
+                buttonLink="https://icpc.global"
+                external={true}
+              />
+            </StaggerItem>
 
-            <RegistrationStep
-              number="2"
-              title="Register Locally"
-              description="Complete your registration with ICPC Sri Lanka"
-              details={[
-                'Fill in the local registration form',
-                'Provide university and team information',
-                'Submit required documents',
-                'Await confirmation email'
-              ]}
-              buttonText="Register with ICPC Sri Lanka"
-              buttonLink="#"
-            />
+            <StaggerItem>
+              <RegistrationStep
+                number="2"
+                title="Register Locally"
+                description="Complete your registration with ICPC Sri Lanka"
+                details={[
+                  'Fill in the local registration form',
+                  'Provide university and team information',
+                  'Submit required documents',
+                  'Await confirmation email'
+                ]}
+                buttonText="Register with ICPC Sri Lanka"
+                buttonLink="#"
+              />
+            </StaggerItem>
 
-            <RegistrationStep
-              number="3"
-              title="Pay Registration Fee"
-              description="Complete payment to confirm your registration"
-              details={[
-                'Registration fee: LKR 3,000 – 5,000 per team',
-                'Fee covers meals and logistics on contest day',
-                'Payment instructions will be provided after registration',
-                'Secure your spot early!'
-              ]}
-            />
-          </div>
+            <StaggerItem>
+              <RegistrationStep
+                number="3"
+                title="Pay Registration Fee"
+                description="Complete payment to confirm your registration"
+                details={[
+                  'Registration fee: LKR 3,000 – 5,000 per team',
+                  'Fee covers meals and logistics on contest day',
+                  'Payment instructions will be provided after registration',
+                  'Secure your spot early!'
+                ]}
+              />
+            </StaggerItem>
+          </StaggerContainer>
         </div>
       </section>
 
       {/* Requirements Section */}
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">Requirements</h2>
+          <FadeIn>
+            <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">Requirements</h2>
+          </FadeIn>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <RequirementCard
-              icon={<FaUsers className="w-8 h-8" />}
-              title="Team Composition"
-              items={[
-                '3 students from the same university',
-                'All members must be currently enrolled',
-                'Undergraduate or graduate students eligible',
-                'Each student can only be on one team'
-              ]}
-            />
+          <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <StaggerItem>
+              <RequirementCard
+                icon={<FaUsers className="w-8 h-8" />}
+                title="Team Composition"
+                items={[
+                  '3 students from the same university',
+                  'All members must be currently enrolled',
+                  'Undergraduate or graduate students eligible',
+                  'Each student can only be on one team'
+                ]}
+              />
+            </StaggerItem>
             
-            <RequirementCard
-              icon={<FaChalkboardTeacher className="w-8 h-8" />}
-              title="Coach"
-              items={[
-                '1 faculty member or staff as coach',
-                'Coach must be affiliated with the university',
-                'Coach handles team registration',
-                'Coach guides team preparation (optional)'
-              ]}
-            />
+            <StaggerItem>
+              <RequirementCard
+                icon={<FaChalkboardTeacher className="w-8 h-8" />}
+                title="Coach"
+                items={[
+                  '1 faculty member or staff as coach',
+                  'Coach must be affiliated with the university',
+                  'Coach handles team registration',
+                  'Coach guides team preparation (optional)'
+                ]}
+              />
+            </StaggerItem>
 
-            <RequirementCard
-              icon={<FaGraduationCap className="w-8 h-8" />}
-              title="Eligibility"
-              items={[
-                'Must be a university student',
-                'Valid university ID required',
-                'Follow ICPC eligibility rules',
-                'Check ICPC website for detailed rules'
-              ]}
-            />
+            <StaggerItem>
+              <RequirementCard
+                icon={<FaGraduationCap className="w-8 h-8" />}
+                title="Eligibility"
+                items={[
+                  'Must be a university student',
+                  'Valid university ID required',
+                  'Follow ICPC eligibility rules',
+                  'Check ICPC website for detailed rules'
+                ]}
+              />
+            </StaggerItem>
 
-            <RequirementCard
-              icon={<FaMoneyBill className="w-8 h-8" />}
-              title="Registration Fee"
-              items={[
-                'LKR 3,000 – 5,000 per team',
-                'Covers meals on contest day',
-                'Covers event logistics',
-                'Early bird discounts may apply'
-              ]}
-            />
-          </div>
+            <StaggerItem>
+              <RequirementCard
+                icon={<FaMoneyBill className="w-8 h-8" />}
+                title="Registration Fee"
+                items={[
+                  'LKR 3,000 – 5,000 per team',
+                  'Covers meals on contest day',
+                  'Covers event logistics',
+                  'Early bird discounts may apply'
+                ]}
+              />
+            </StaggerItem>
+          </StaggerContainer>
         </div>
       </section>
 
       {/* Important Information */}
       <section className="py-16 bg-[#4C82C3]/10">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">Important Information</h2>
+          <FadeIn>
+            <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">Important Information</h2>
+          </FadeIn>
           
-          <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12 space-y-6">
-            <InfoItem
-              icon={<FaCalendar className="w-6 h-6" />}
-              title="Registration Opens"
-              content="September 2025"
-            />
-            <InfoItem
-              icon={<FaBuilding className="w-6 h-6" />}
-              title="Teams Per University"
-              content="Multiple teams from the same university can register (subject to contest capacity)"
-            />
-            <InfoItem
-              icon={<FaLaptop className="w-6 h-6" />}
-              title="Programming Languages"
-              content="C, C++, Java, Python, and other ICPC-approved languages"
-            />
-            <InfoItem
-              icon={<FaMapMarkerAlt className="w-6 h-6" />}
-              title="Contest Location"
-              content="To be announced (Major city in Sri Lanka)"
-            />
-            <InfoItem
-              icon={<FaEnvelope className="w-6 h-6" />}
-              title="Contact"
-              content="For questions, contact ICPC Sri Lanka organizing committee"
-            />
-          </div>
+          <ScaleIn delay={0.2}>
+            <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12 space-y-6">
+              <InfoItem
+                icon={<FaCalendar className="w-6 h-6" />}
+                title="Registration Opens"
+                content="September 2025"
+              />
+              <InfoItem
+                icon={<FaBuilding className="w-6 h-6" />}
+                title="Teams Per University"
+                content="Multiple teams from the same university can register (subject to contest capacity)"
+              />
+              <InfoItem
+                icon={<FaLaptop className="w-6 h-6" />}
+                title="Programming Languages"
+                content="C, C++, Java, Python, and other ICPC-approved languages"
+              />
+              <InfoItem
+                icon={<FaMapMarkerAlt className="w-6 h-6" />}
+                title="Contest Location"
+                content="To be announced (Major city in Sri Lanka)"
+              />
+              <InfoItem
+                icon={<FaEnvelope className="w-6 h-6" />}
+                title="Contact"
+                content="For questions, contact ICPC Sri Lanka organizing committee"
+              />
+            </div>
+          </ScaleIn>
         </div>
       </section>
 
       {/* FAQ Teaser */}
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Have Questions?</h2>
-          <p className="text-xl text-gray-700 mb-8">
-            Check out our FAQ page for answers to common questions
-          </p>
-          <Link
-            href="/faq"
-            className="inline-block bg-[#4C82C3] text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-[#4C82C3]/90 transition-colors"
-          >
-            View FAQ
-          </Link>
+          <FadeIn>
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">Have Questions?</h2>
+          </FadeIn>
+          <FadeIn delay={0.2}>
+            <p className="text-xl text-gray-700 mb-8">
+              Check out our FAQ page for answers to common questions
+            </p>
+          </FadeIn>
+          <ScaleIn delay={0.4}>
+            <Link
+              href="/faq"
+              className="inline-block bg-[#4C82C3] text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-[#4C82C3]/90 transition-colors"
+            >
+              View FAQ
+            </Link>
+          </ScaleIn>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-[#4C82C3]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold text-white mb-6">Ready to Register?</h2>
-          <p className="text-xl text-white mb-8">
-            Registration opens in September 2025. Be prepared!
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://icpc.global"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-[#FDBA11] text-[#4C82C3] px-8 py-4 rounded-full text-lg font-bold hover:bg-[#FDBA11]/90 transition-all duration-300"
-            >
-              ICPC Official Site
-            </a>
-            <Link
-              href="/"
-              className="inline-block bg-white text-[#4C82C3] px-8 py-4 rounded-full text-lg font-bold hover:bg-gray-100 transition-all duration-300"
-            >
-              Back to Home
-            </Link>
+      <FadeIn>
+        <section className="py-16 bg-[#4C82C3]">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 className="text-4xl font-bold text-white mb-6">Ready to Register?</h2>
+            <p className="text-xl text-white mb-8">
+              Registration opens in September 2025. Be prepared!
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <ScaleIn delay={0.3}>
+                <a
+                  href="https://icpc.global"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-[#FDBA11] text-[#4C82C3] px-8 py-4 rounded-full text-lg font-bold hover:bg-[#FDBA11]/90 transition-all duration-300"
+                >
+                  ICPC Official Site
+                </a>
+              </ScaleIn>
+              <ScaleIn delay={0.5}>
+                <Link
+                  href="/"
+                  className="inline-block bg-white text-[#4C82C3] px-8 py-4 rounded-full text-lg font-bold hover:bg-gray-100 transition-all duration-300"
+                >
+                  Back to Home
+                </Link>
+              </ScaleIn>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </FadeIn>
     </main>
   );
 }
