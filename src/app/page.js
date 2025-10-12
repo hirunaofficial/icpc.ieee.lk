@@ -41,16 +41,17 @@ export default function Home() {
                 src={`/gallery/${image}`}
                 alt="ICPC Event"
                 fill
-                className="object-cover"
+                className="object-cover scale-105"
                 priority={index === 0}
+                quality={95}
               />
             </div>
           ))}
-          {/* Solid Color Overlay */}
-          <div className="absolute inset-0 bg-[#4C82C3]/90"></div>
-          {/* Pattern Overlay */}
-          <div className="absolute inset-0 opacity-10" style={{
-            backgroundImage: 'repeating-linear-gradient(45deg, transparent, transparent 50px, rgba(255,255,255,.05) 50px, rgba(255,255,255,.05) 100px)',
+          {/* Gradient Overlay - Lighter for clearer images */}
+          <div className="absolute inset-0 bg-gradient-to-b from-[#4C82C3]/75 via-[#4C82C3]/70 to-[#4C82C3]/80"></div>
+          {/* Subtle Pattern Overlay */}
+          <div className="absolute inset-0 opacity-5" style={{
+            backgroundImage: 'repeating-linear-gradient(45deg, transparent, transparent 50px, rgba(255,255,255,.08) 50px, rgba(255,255,255,.08) 100px)',
           }}></div>
         </div>
 
@@ -59,28 +60,28 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
             <div className="text-center">
               {/* ICPC Logo Placeholder */}
-              <div className="mb-8 flex justify-center">
-                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 inline-block">
-                  <FaCode className="w-20 h-20 text-[#FDBA11]" />
+              <div className="mb-8 flex justify-center animate-fade-in-down">
+                <div className="bg-white/20 backdrop-blur-md rounded-2xl p-6 inline-block shadow-2xl border border-white/20">
+                  <FaCode className="w-20 h-20 text-[#FDBA11] drop-shadow-lg" />
                 </div>
               </div>
               
-              <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 text-white tracking-tight">
+              <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 text-white tracking-tight animate-fade-in drop-shadow-2xl">
                 ICPC Sri Lanka <span className="text-[#FDBA11]">2026</span>
               </h1>
-              <div className="h-1 w-32 bg-[#FDBA11] mx-auto mb-8"></div>
-              <p className="text-2xl md:text-4xl mb-6 text-[#FDBA11] font-semibold tracking-wide">
+              <div className="h-1.5 w-32 bg-gradient-to-r from-transparent via-[#FDBA11] to-transparent mx-auto mb-8 animate-pulse-slow"></div>
+              <p className="text-2xl md:text-4xl mb-6 text-[#FDBA11] font-bold tracking-wide animate-fade-in-up drop-shadow-lg">
                 Code Beyond Borders
               </p>
-              <p className="text-lg md:text-xl mb-12 max-w-3xl mx-auto leading-relaxed text-gray-200">
+              <p className="text-lg md:text-xl mb-12 max-w-3xl mx-auto leading-relaxed text-white/95 drop-shadow-md animate-fade-in-up font-medium">
                 For the first time ever, Sri Lanka enters the world&apos;s biggest stage of competitive programming. 
                 Join us in making history.
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up">
                 <Link
                   href="/registration"
-                  className="group relative inline-flex items-center gap-2 bg-[#FDBA11] text-[#4C82C3] px-8 py-4 rounded-lg text-lg font-bold hover:bg-[#FDBA11]/90 transition-all duration-300 shadow-2xl hover:shadow-[#FDBA11]/50 transform hover:scale-105"
+                  className="group relative inline-flex items-center gap-2 bg-[#FDBA11] text-[#4C82C3] px-8 py-4 rounded-xl text-lg font-bold hover:bg-[#FDBA11]/90 transition-all duration-300 shadow-2xl hover:shadow-[#FDBA11]/60 transform hover:scale-[1.02]"
                 >
                   <span>Register Now</span>
                   <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -89,25 +90,25 @@ export default function Home() {
                 </Link>
                 <Link
                   href="/about"
-                  className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white/20 transition-all duration-300 border-2 border-white/30"
+                  className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-white/30 transition-all duration-300 border-2 border-white/40 hover:border-white/60 shadow-lg"
                 >
                   Learn More
                 </Link>
               </div>
 
               {/* Quick Stats */}
-              <div className="mt-16 grid grid-cols-3 gap-4 md:gap-8 max-w-3xl mx-auto">
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                  <div className="text-2xl md:text-4xl font-bold text-[#FDBA11]">100+</div>
-                  <div className="text-sm md:text-base text-gray-300">Countries</div>
+              <div className="mt-16 grid grid-cols-3 gap-4 md:gap-8 max-w-3xl mx-auto animate-fade-in-up">
+                <div className="bg-white/15 backdrop-blur-md rounded-xl p-4 border border-white/20 shadow-xl hover:bg-white/20 transition-all duration-300 transform hover:scale-[1.02]">
+                  <div className="text-2xl md:text-4xl font-bold text-[#FDBA11] drop-shadow-md">100+</div>
+                  <div className="text-sm md:text-base text-white/90 font-medium">Countries</div>
                 </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                  <div className="text-2xl md:text-4xl font-bold text-[#FDBA11]">3,000+</div>
-                  <div className="text-sm md:text-base text-gray-300">Universities</div>
+                <div className="bg-white/15 backdrop-blur-md rounded-xl p-4 border border-white/20 shadow-xl hover:bg-white/20 transition-all duration-300 transform hover:scale-[1.02]">
+                  <div className="text-2xl md:text-4xl font-bold text-[#FDBA11] drop-shadow-md">3,000+</div>
+                  <div className="text-sm md:text-base text-white/90 font-medium">Universities</div>
                 </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                  <div className="text-2xl md:text-4xl font-bold text-[#FDBA11]">60,000+</div>
-                  <div className="text-sm md:text-base text-gray-300">Students</div>
+                <div className="bg-white/15 backdrop-blur-md rounded-xl p-4 border border-white/20 shadow-xl hover:bg-white/20 transition-all duration-300 transform hover:scale-[1.02]">
+                  <div className="text-2xl md:text-4xl font-bold text-[#FDBA11] drop-shadow-md">60,000+</div>
+                  <div className="text-sm md:text-base text-white/90 font-medium">Students</div>
                 </div>
               </div>
             </div>
