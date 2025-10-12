@@ -25,7 +25,7 @@ export default function Gallery() {
   return (
     <main className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-900 via-indigo-900 to-purple-900 text-white py-20">
+      <section className="bg-[#4C82C3] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 text-center">Gallery</h1>
           <p className="text-xl md:text-2xl text-center max-w-4xl mx-auto">
@@ -85,7 +85,7 @@ export default function Gallery() {
       )}
 
       {/* Call to Action */}
-      <section className="py-16 bg-gradient-to-r from-blue-900 to-indigo-900 text-white">
+      <section className="py-16 bg-[#4C82C3] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-6">Be Part of ICPC Sri Lanka 2026</h2>
           <p className="text-xl mb-8">
@@ -93,7 +93,7 @@ export default function Gallery() {
           </p>
           <a
             href="/registration"
-            className="inline-block bg-yellow-400 text-blue-900 px-8 py-4 rounded-full text-lg font-bold hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105"
+            className="inline-block bg-[#FDBA11] text-[#4C82C3] px-8 py-4 rounded-full text-lg font-bold hover:bg-[#FDBA11]/90 transition-all duration-300 transform hover:scale-105"
           >
             Register Your Team
           </a>

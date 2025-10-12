@@ -20,7 +20,7 @@ export default function Registration() {
   return (
     <main className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-900 via-indigo-900 to-purple-900 text-white py-20">
+      <section className="bg-[#4C82C3] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 text-center">Registration</h1>
           <p className="text-xl md:text-2xl text-center max-w-4xl mx-auto">
@@ -133,7 +133,7 @@ export default function Registration() {
       </section>
 
       {/* Important Information */}
-      <section className="py-16 bg-gradient-to-br from-blue-50 to-indigo-50">
+      <section className="py-16 bg-[#4C82C3]/10">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">Important Information</h2>
           
@@ -176,7 +176,7 @@ export default function Registration() {
           </p>
           <Link
             href="/faq"
-            className="inline-block bg-blue-900 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-800 transition-colors"
+            className="inline-block bg-[#4C82C3] text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-[#4C82C3]/90 transition-colors"
           >
             View FAQ
           </Link>
@@ -184,10 +184,10 @@ export default function Registration() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-yellow-400 to-orange-400">
+      <section className="py-16 bg-[#4C82C3]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold text-blue-900 mb-6">Ready to Register?</h2>
-          <p className="text-xl text-blue-900 mb-8">
+          <h2 className="text-4xl font-bold text-white mb-6">Ready to Register?</h2>
+          <p className="text-xl text-white mb-8">
             Registration opens in September 2025. Be prepared!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -195,13 +195,13 @@ export default function Registration() {
               href="https://icpc.global"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-blue-900 text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-blue-800 transition-all duration-300"
+              className="inline-block bg-[#FDBA11] text-[#4C82C3] px-8 py-4 rounded-full text-lg font-bold hover:bg-[#FDBA11]/90 transition-all duration-300"
             >
               ICPC Official Site
             </a>
             <Link
               href="/"
-              className="inline-block bg-white text-blue-900 px-8 py-4 rounded-full text-lg font-bold hover:bg-gray-100 transition-all duration-300"
+              className="inline-block bg-white text-[#4C82C3] px-8 py-4 rounded-full text-lg font-bold hover:bg-gray-100 transition-all duration-300"
             >
               Back to Home
             </Link>
@@ -216,7 +216,7 @@ function RegistrationStep({ number, title, description, details, buttonText, but
   return (
     <div className="bg-white rounded-xl shadow-md p-8">
       <div className="flex items-start space-x-4 mb-6">
-        <div className="flex-shrink-0 w-12 h-12 bg-blue-900 text-white rounded-full flex items-center justify-center font-bold text-xl">
+        <div className="flex-shrink-0 w-12 h-12 bg-[#4C82C3] text-white rounded-full flex items-center justify-center font-bold text-xl">
           {number}
         </div>
         <div>
@@ -242,14 +242,14 @@ function RegistrationStep({ number, title, description, details, buttonText, but
             href={buttonLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-blue-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors"
+            className="inline-block bg-[#4C82C3] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#4C82C3]/90 transition-colors"
           >
             {buttonText} →
           </a>
         ) : (
           <Link
             href={buttonLink}
-            className="inline-block bg-blue-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors"
+            className="inline-block bg-[#4C82C3] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#4C82C3]/90 transition-colors"
           >
             {buttonText} →
           </Link>
@@ -261,15 +261,15 @@ function RegistrationStep({ number, title, description, details, buttonText, but
 
 function RequirementCard({ icon, title, items }) {
   return (
-    <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 shadow-md">
+    <div className="bg-[#4C82C3]/10 border-2 border-[#4C82C3] rounded-xl p-6 shadow-md">
       <div className="flex items-center space-x-3 mb-4">
-        <div className="text-blue-600">{icon}</div>
+        <div className="text-[#4C82C3]">{icon}</div>
         <h3 className="text-xl font-bold text-gray-900">{title}</h3>
       </div>
       <ul className="space-y-2">
         {items.map((item, index) => (
           <li key={index} className="flex items-start space-x-2 text-gray-700">
-            <span className="text-blue-600 font-bold">•</span>
+            <span className="text-[#4C82C3] font-bold">•</span>
             <span>{item}</span>
           </li>
         ))}
@@ -281,7 +281,7 @@ function RequirementCard({ icon, title, items }) {
 function InfoItem({ icon, title, content }) {
   return (
     <div className="flex items-start space-x-4 pb-6 border-b border-gray-200 last:border-0">
-      <div className="text-blue-600 flex-shrink-0">{icon}</div>
+      <div className="text-[#4C82C3] flex-shrink-0">{icon}</div>
       <div>
         <h4 className="text-lg font-semibold text-gray-900 mb-1">{title}</h4>
         <p className="text-gray-700">{content}</p>
