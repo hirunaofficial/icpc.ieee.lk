@@ -232,7 +232,7 @@ function EnvironmentDetail({ icon, title, description }) {
 function ProcessStep({ number, title, description }) {
   return (
     <div className="flex items-start space-x-4">
-      <div className="flex-shrink-0 w-10 h-10 bg-blue-900 text-white rounded-full flex items-center justify-center font-bold text-lg">
+      <div className="flex-shrink-0 w-10 h-10 bg-[#4C82C3] text-white rounded-full flex items-center justify-center font-bold text-lg">
         {number}
       </div>
       <div>
