@@ -28,12 +28,12 @@ export default function HowItWorks() {
             backgroundImage: "url('/gallery/54760506656_c153ce78b8_3k.jpg')"
           }}
         ></div>
-        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="absolute inset-0 bg-[#143C68]/90"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <FadeIn>
             <h1 className="text-6xl md:text-8xl font-bold mb-8 text-center text-white">How It Works?</h1>
-            <div className="h-2 w-32 bg-[#FDBA11] mx-auto mb-8 rounded-full"></div>
-            <p className="text-3xl md:text-4xl text-center max-w-4xl mx-auto font-bold text-[#FDBA11]">
+            <div className="h-2 w-32 bg-[#FDBC1D] mx-auto mb-8 rounded-full"></div>
+            <p className="text-3xl md:text-4xl text-center max-w-4xl mx-auto font-bold text-[#FDBC1D]">
               Everything you need to know about the contest format
             </p>
           </FadeIn>
@@ -46,8 +46,8 @@ export default function HowItWorks() {
           <FadeIn>
             <div className="text-center mb-20">
               <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">Contest Format</h2>
-              <div className="h-2 w-32 bg-[#FDBA11] mx-auto mb-8 rounded-full"></div>
-              <p className="text-2xl text-[#4C82C3] font-semibold">Key details about the competition structure</p>
+              <div className="h-2 w-32 bg-[#FDBC1D] mx-auto mb-8 rounded-full"></div>
+              <p className="text-2xl text-[#143C68] font-semibold">Key details about the competition structure</p>
             </div>
           </FadeIn>
           
@@ -91,26 +91,26 @@ export default function HowItWorks() {
           {/* Contest Environment */}
           <FadeIn delay={0.3}>
             <div className="bg-white rounded-3xl shadow-2xl p-12 md:p-16 mb-20">
-              <h3 className="text-4xl font-bold text-[#4C82C3] mb-10 text-center">Contest Environment</h3>
-              <div className="h-1 w-20 bg-[#FDBA11] mx-auto mb-12 rounded-full"></div>
+              <h3 className="text-4xl font-bold text-[#143C68] mb-10 text-center">Contest Environment</h3>
+              <div className="h-1 w-20 bg-[#FDBC1D] mx-auto mb-12 rounded-full"></div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <EnvironmentDetail
-                  icon={<FaDesktop className="w-12 h-12 text-[#4C82C3]" />}
+                  icon={<FaDesktop className="w-12 h-12 text-[#143C68]" />}
                   title="One Computer Per Team"
                   description="Teams share a single computer, requiring strategic coordination and time management"
                 />
                 <EnvironmentDetail
-                  icon={<FaWifi className="w-12 h-12 text-[#4C82C3]" />}
+                  icon={<FaWifi className="w-12 h-12 text-[#143C68]" />}
                   title="Offline Mode"
                   description="No internet access during the contest - just you, your teammates, and your skills"
                 />
                 <EnvironmentDetail
-                  icon={<FaCog className="w-12 h-12 text-[#4C82C3]" />}
+                  icon={<FaCog className="w-12 h-12 text-[#143C68]" />}
                   title="Programming Languages"
                   description="Standard ICPC-approved languages: C, C++, Java, Python, and others"
                 />
                 <EnvironmentDetail
-                  icon={<FaTrophy className="w-12 h-12 text-[#4C82C3]" />}
+                  icon={<FaTrophy className="w-12 h-12 text-[#143C68]" />}
                   title="Balloon Tradition"
                   description="Teams receive a colored balloon for each problem solved - a fun ICPC tradition!"
                 />
@@ -120,9 +120,9 @@ export default function HowItWorks() {
 
           {/* Problem Solving */}
           <FadeIn delay={0.5}>
-            <div className="bg-[#FDBA11] rounded-3xl shadow-2xl p-12 md:p-16 mb-20">
-              <h3 className="text-4xl font-bold text-[#4C82C3] mb-10 text-center">Problem Solving Process</h3>
-              <div className="h-1 w-20 bg-[#4C82C3] mx-auto mb-12 rounded-full"></div>
+            <div className="bg-[#FDBC1D] rounded-3xl shadow-2xl p-12 md:p-16 mb-20">
+              <h3 className="text-4xl font-bold text-[#143C68] mb-10 text-center">Problem Solving Process</h3>
+              <div className="h-1 w-20 bg-[#143C68] mx-auto mb-12 rounded-full"></div>
               <div className="space-y-8">
                 <ProcessStep
                   number="1"
@@ -156,8 +156,8 @@ export default function HowItWorks() {
           {/* Judging System */}
           <FadeIn delay={0.7}>
             <div className="bg-white rounded-3xl shadow-2xl p-12 md:p-16 mb-20">
-              <h3 className="text-4xl font-bold text-[#4C82C3] mb-8 text-center">Judging & Scoring</h3>
-              <div className="h-1 w-20 bg-[#FDBA11] mx-auto mb-12 rounded-full"></div>
+              <h3 className="text-4xl font-bold text-[#143C68] mb-8 text-center">Judging & Scoring</h3>
+              <div className="h-1 w-20 bg-[#FDBC1D] mx-auto mb-12 rounded-full"></div>
               <p className="text-xl text-gray-700 mb-12 text-center leading-relaxed max-w-4xl mx-auto">
                 Solutions are submitted to a local offline judging system (PC² or equivalent). 
                 Your submission will be tested against hidden test cases.
@@ -166,22 +166,22 @@ export default function HowItWorks() {
               <div className="space-y-4 mb-8">
                 <JudgeResult
                   verdict="Accepted (AC)"
-                  color="bg-[#4C82C3]"
+                  color="bg-[#143C68]"
                   description="Your solution is correct! You'll receive a balloon"
                 />
                 <JudgeResult
                   verdict="Wrong Answer (WA)"
-                  color="bg-[#B22E1B]"
+                  color="bg-red-600"
                   description="Your solution produces incorrect output"
                 />
                 <JudgeResult
                   verdict="Time Limit Exceeded (TLE)"
-                  color="bg-[#FDBA11]"
+                  color="bg-[#FDBC1D]"
                   description="Your solution is too slow"
                 />
                 <JudgeResult
                   verdict="Runtime Error (RE)"
-                  color="bg-[#B22E1B]"
+                  color="bg-red-600"
                   description="Your program crashed during execution"
                 />
                 <JudgeResult
@@ -191,15 +191,15 @@ export default function HowItWorks() {
                 />
               </div>
 
-              <div className="bg-[#4C82C3]/10 border-2 border-[#4C82C3] rounded-xl p-6">
+              <div className="bg-[#143C68]/10 border-2 border-[#143C68] rounded-xl p-6">
                 <h4 className="text-xl font-bold text-gray-900 mb-3">Ranking System</h4>
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-start space-x-2">
-                    <span className="text-[#4C82C3] font-bold">1.</span>
+                    <span className="text-[#143C68] font-bold">1.</span>
                     <span>Teams are ranked by the <strong>number of problems solved</strong></span>
                   </li>
                   <li className="flex items-start space-x-2">
-                    <span className="text-[#4C82C3] font-bold">2.</span>
+                    <span className="text-[#143C68] font-bold">2.</span>
                     <span><strong>Penalty time</strong> is used as a tiebreaker (calculated from submission time + wrong submissions)</span>
                   </li>
                 </ul>
@@ -210,13 +210,13 @@ export default function HowItWorks() {
           {/* What to Bring */}
           <ScaleIn delay={0.9}>
             <div className="bg-gray-50 rounded-3xl shadow-2xl p-12 md:p-16">
-              <h3 className="text-4xl font-bold text-[#4C82C3] mb-8 text-center">What to Bring</h3>
-              <div className="h-1 w-20 bg-[#FDBA11] mx-auto mb-12 rounded-full"></div>
+              <h3 className="text-4xl font-bold text-[#143C68] mb-8 text-center">What to Bring</h3>
+              <div className="h-1 w-20 bg-[#FDBC1D] mx-auto mb-12 rounded-full"></div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <BringItem icon={<FaIdCard className="w-12 h-12 text-[#4C82C3]" />} item="University ID Card" />
-                <BringItem icon={<FaPen className="w-12 h-12 text-[#4C82C3]" />} item="Stationery (pen, paper)" />
-                <BringItem icon={<FaLightbulb className="w-12 h-12 text-[#4C82C3]" />} item="Your problem-solving mindset" />
-                <BringItem icon={<FaHandPaper className="w-12 h-12 text-[#4C82C3]" />} item="Team spirit and collaboration" />
+                <BringItem icon={<FaIdCard className="w-12 h-12 text-[#143C68]" />} item="University ID Card" />
+                <BringItem icon={<FaPen className="w-12 h-12 text-[#143C68]" />} item="Stationery (pen, paper)" />
+                <BringItem icon={<FaLightbulb className="w-12 h-12 text-[#143C68]" />} item="Your problem-solving mindset" />
+                <BringItem icon={<FaHandPaper className="w-12 h-12 text-[#143C68]" />} item="Team spirit and collaboration" />
               </div>
             </div>
           </ScaleIn>
@@ -224,7 +224,7 @@ export default function HowItWorks() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-32 bg-[#4C82C3] text-white">
+      <section className="py-32 bg-[#143C68] text-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <FadeIn>
             <h2 className="text-6xl font-bold mb-8">Ready to Compete?</h2>
@@ -235,7 +235,7 @@ export default function HowItWorks() {
           <ScaleIn delay={0.3}>
             <Link
               href="/registration"
-              className="inline-flex items-center gap-3 bg-[#FDBA11] text-[#4C82C3] px-12 py-6 rounded-3xl text-2xl font-bold hover:bg-[#FDBA11]/90 transition-all duration-300 shadow-2xl hover:-translate-y-2"
+              className="inline-flex items-center gap-3 bg-[#FDBC1D] text-[#143C68] px-12 py-6 rounded-3xl text-2xl font-bold hover:bg-[#e6a91a] transition-all duration-300 shadow-2xl hover:-translate-y-2"
             >
               Register Your Team
               <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -252,9 +252,9 @@ export default function HowItWorks() {
 function FormatCard({ icon, title, value, description }) {
   return (
     <div className="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 p-10 text-center">
-      <div className="text-[#4C82C3] mb-8 flex justify-center">{icon}</div>
+      <div className="text-[#143C68] mb-8 flex justify-center">{icon}</div>
       <h3 className="text-2xl font-bold text-gray-900 mb-4">{title}</h3>
-      <div className="text-4xl font-bold text-[#4C82C3] mb-6">{value}</div>
+      <div className="text-4xl font-bold text-[#143C68] mb-6">{value}</div>
       <p className="text-gray-600 text-lg leading-relaxed">{description}</p>
     </div>
   );
@@ -266,7 +266,7 @@ function EnvironmentDetail({ icon, title, description }) {
       <div className="flex items-start space-x-6">
         <div className="flex-shrink-0">{icon}</div>
         <div>
-          <h4 className="text-2xl font-bold text-[#4C82C3] mb-3">{title}</h4>
+          <h4 className="text-2xl font-bold text-[#143C68] mb-3">{title}</h4>
           <p className="text-gray-700 text-lg leading-relaxed">{description}</p>
         </div>
       </div>
@@ -278,11 +278,11 @@ function ProcessStep({ number, title, description }) {
   return (
     <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
       <div className="flex items-start space-x-6">
-        <div className="flex-shrink-0 w-14 h-14 bg-[#4C82C3] text-white rounded-full flex items-center justify-center font-bold text-2xl">
+        <div className="flex-shrink-0 w-14 h-14 bg-[#143C68] text-white rounded-full flex items-center justify-center font-bold text-2xl">
           {number}
         </div>
         <div>
-          <h4 className="text-2xl font-bold text-[#4C82C3] mb-3">{title}</h4>
+          <h4 className="text-2xl font-bold text-[#143C68] mb-3">{title}</h4>
           <p className="text-gray-700 text-lg leading-relaxed">{description}</p>
         </div>
       </div>
