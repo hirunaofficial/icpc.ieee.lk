@@ -9,12 +9,12 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow-lg sticky top-0 z-50 border-b-4 border-[#FDBA11]">
+    <nav className="bg-white shadow-lg sticky top-0 z-50 border-b-4 border-[#FDBC1D]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-24">
           {/* Logo and Title */}
           <Link href="/" className="flex items-center space-x-4 group">
-            <div className="relative w-16 h-16 bg-[#4C82C3] rounded-2xl p-3 group-hover:bg-[#FDBA11] transition-all duration-300 shadow-lg">
+            <div className="relative w-16 h-16 bg-[#143C68] rounded-2xl p-3 group-hover:bg-[#FDBC1D] transition-all duration-300 shadow-lg">
               <Image
                 src="/logo.png"
                 alt="ICPC Sri Lanka Logo"
@@ -24,8 +24,8 @@ export default function Navbar() {
               />
             </div>
             <div className="flex flex-col">
-              <span className="text-3xl font-bold text-black group-hover:text-[#4C82C3] transition-colors">ICPC Sri Lanka</span>
-              <span className="text-lg font-bold text-[#FDBA11]">2026</span>
+              <span className="text-3xl font-bold text-black group-hover:text-[#143C68] transition-colors">ICPC Sri Lanka</span>
+              <span className="text-lg font-bold text-[#FDBC1D]">2026</span>
             </div>
           </Link>
 
@@ -44,7 +44,7 @@ export default function Navbar() {
           <div className="hidden lg:block">
             <Link
               href="/registration"
-              className="inline-flex items-center gap-3 bg-[#FDBA11] text-[#4C82C3] px-8 py-4 rounded-2xl font-bold hover:bg-[#4C82C3] hover:text-white transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105"
+              className="inline-flex items-center gap-3 bg-[#FDBC1D] text-[#143C68] px-8 py-4 rounded-2xl font-bold hover:bg-[#143C68] hover:text-white transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105"
             >
               Register Now
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -56,7 +56,7 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden p-3 rounded-2xl bg-[#4C82C3] text-white hover:bg-[#FDBA11] hover:text-[#4C82C3] transition-all duration-300 shadow-lg"
+            className="lg:hidden p-3 rounded-2xl bg-[#143C68] text-white hover:bg-[#FDBC1D] hover:text-[#143C68] transition-all duration-300 shadow-lg"
             aria-label="Toggle menu"
           >
             {isMenuOpen ? (
@@ -69,7 +69,7 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="lg:hidden bg-white border-t-4 border-[#FDBA11] py-6 shadow-lg">
+          <div className="lg:hidden bg-white border-t-4 border-[#FDBC1D] py-6 shadow-lg">
             <div className="space-y-3">
               <MobileNavLink href="/" onClick={() => setIsMenuOpen(false)}>Home</MobileNavLink>
               <MobileNavLink href="/about" onClick={() => setIsMenuOpen(false)}>About</MobileNavLink>
@@ -81,7 +81,7 @@ export default function Navbar() {
               <div className="px-4 pt-6">
                 <Link
                   href="/registration"
-                  className="block bg-[#FDBA11] text-[#4C82C3] px-8 py-4 rounded-2xl font-bold text-center hover:bg-[#4C82C3] hover:text-white transition-all duration-300 shadow-lg text-lg"
+                  className="block bg-[#FDBC1D] text-[#143C68] px-8 py-4 rounded-2xl font-bold text-center hover:bg-[#143C68] hover:text-white transition-all duration-300 shadow-lg text-lg"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Register Now
@@ -99,7 +99,7 @@ function NavLink({ href, children }) {
   return (
     <Link
       href={href}
-      className="px-5 py-3 rounded-xl text-black font-semibold hover:bg-[#4C82C3] hover:text-white transition-all duration-300 hover:shadow-lg transform hover:scale-105"
+      className="px-5 py-3 rounded-xl text-black font-semibold hover:bg-[#143C68] hover:text-white transition-all duration-300 hover:shadow-lg transform hover:scale-105"
     >
       {children}
     </Link>
@@ -111,7 +111,7 @@ function MobileNavLink({ href, onClick, children }) {
     <Link
       href={href}
       onClick={onClick}
-      className="block px-6 py-4 mx-4 rounded-xl text-black font-semibold hover:bg-[#4C82C3] hover:text-white transition-all duration-300 hover:shadow-lg border-2 border-transparent hover:border-[#FDBA11]"
+      className="block px-6 py-4 mx-4 rounded-xl text-black font-semibold hover:bg-[#143C68] hover:text-white transition-all duration-300 hover:shadow-lg border-2 border-transparent hover:border-[#FDBC1D]"
     >
       {children}
     </Link>

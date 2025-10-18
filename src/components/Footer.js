@@ -5,7 +5,7 @@ import { UserIcon, BuildingOfficeIcon } from '@heroicons/react/24/outline';
 
 export default function Footer() {
   return (
-    <footer className="bg-[#4C82C3] text-white">
+    <footer className="bg-[#143C68] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* About Section */}
@@ -22,9 +22,9 @@ export default function Footer() {
               </div>
               <div>
                 <h3 className="text-4xl font-bold text-white">
-                  ICPC <span className="text-[#FDBA11]">Sri Lanka</span>
+                  ICPC <span className="text-[#FDBC1D]">Sri Lanka</span>
                 </h3>
-                <div className="text-xl font-bold text-[#FDBA11]">2026</div>
+                <div className="text-xl font-bold text-[#FDBC1D]">2026</div>
                 <div className="text-sm text-white/90 font-medium mt-1">Code Beyond Borders</div>
               </div>
             </div>
@@ -58,7 +58,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-2xl font-bold mb-8 text-[#FDBA11]">
+            <h4 className="text-2xl font-bold mb-8 text-[#FDBC1D]">
               Quick Links
             </h4>
             <ul className="space-y-4">
@@ -74,7 +74,7 @@ export default function Footer() {
 
           {/* Resources */}
           <div>
-            <h4 className="text-2xl font-bold mb-8 text-[#FDBA11]">
+            <h4 className="text-2xl font-bold mb-8 text-[#FDBC1D]">
               Resources
             </h4>
             <ul className="space-y-4">
@@ -84,7 +84,7 @@ export default function Footer() {
                   href="https://icpc.global"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white hover:text-[#FDBA11] transition-colors flex items-center gap-3 font-semibold text-lg group"
+                  className="text-white hover:text-[#FDBC1D] transition-colors flex items-center gap-3 font-semibold text-lg group"
                 >
                   <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -98,7 +98,7 @@ export default function Footer() {
               <li>
                 <a
                   href="mailto:contact@icpc.lk"
-                  className="text-white hover:text-[#FDBA11] transition-colors flex items-center gap-3 font-semibold text-lg group"
+                  className="text-white hover:text-[#FDBC1D] transition-colors flex items-center gap-3 font-semibold text-lg group"
                 >
                   <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -112,26 +112,26 @@ export default function Footer() {
         </div>
 
         {/* Organizers Section */}
-        <div className="border-t-4 border-[#FDBA11] pt-16 mb-12">
+        <div className="border-t-4 border-[#FDBC1D] pt-16 mb-12">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             <div className="bg-white rounded-2xl p-8 shadow-xl">
               <div className="flex items-start gap-6">
-                <div className="bg-[#FDBA11] p-4 rounded-2xl">
-                  <UserIcon className="w-10 h-10 text-[#4C82C3]" />
+                <div className="bg-[#FDBC1D] p-4 rounded-2xl">
+                  <UserIcon className="w-10 h-10 text-[#143C68]" />
                 </div>
                 <div>
-                  <div className="text-sm font-bold text-[#4C82C3] uppercase tracking-wider mb-3">ICPC Sri Lanka Director</div>
+                  <div className="text-sm font-bold text-[#143C68] uppercase tracking-wider mb-3">ICPC Sri Lanka Director</div>
                   <div className="text-2xl font-bold text-black">Dr. Upul Jayasinghe</div>
                 </div>
               </div>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-xl">
               <div className="flex items-start gap-6">
-                <div className="bg-[#FDBA11] p-4 rounded-2xl">
-                  <BuildingOfficeIcon className="w-10 h-10 text-[#4C82C3]" />
+                <div className="bg-[#FDBC1D] p-4 rounded-2xl">
+                  <BuildingOfficeIcon className="w-10 h-10 text-[#143C68]" />
                 </div>
                 <div>
-                  <div className="text-sm font-bold text-[#4C82C3] uppercase tracking-wider mb-3">Organized by</div>
+                  <div className="text-sm font-bold text-[#143C68] uppercase tracking-wider mb-3">Organized by</div>
                   <div className="text-xl font-bold text-black leading-tight">
                     IEEE Young Professionals Sri Lanka
                     <br />
@@ -144,14 +144,14 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t-4 border-[#FDBA11] pt-12">
+        <div className="border-t-4 border-[#FDBC1D] pt-12">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-center md:text-left mb-6 md:mb-0">
               <p className="text-white font-bold text-xl">&copy; {new Date().getFullYear()} ICPC Sri Lanka. All rights reserved.</p>
-              <p className="text-[#FDBA11] font-bold text-2xl mt-3">Code Beyond Borders</p>
+              <p className="text-[#FDBC1D] font-bold text-2xl mt-3">Code Beyond Borders</p>
             </div>
             <div className="flex items-center space-x-3 text-white bg-white/10 px-6 py-3 rounded-2xl">
-              <FaMapMarkerAlt className="w-6 h-6 text-[#FDBA11]" />
+              <FaMapMarkerAlt className="w-6 h-6 text-[#FDBC1D]" />
               <span className="font-bold text-lg">Sri Lanka</span>
             </div>
           </div>
@@ -167,7 +167,7 @@ function SocialLink({ href, icon, label }) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="w-14 h-14 rounded-2xl bg-white flex items-center justify-center hover:bg-[#FDBA11] text-[#4C82C3] hover:text-[#4C82C3] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-110"
+      className="w-14 h-14 rounded-2xl bg-white flex items-center justify-center hover:bg-[#FDBC1D] text-[#143C68] hover:text-[#143C68] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-110"
       aria-label={label}
     >
       {icon}
@@ -180,7 +180,7 @@ function FooterLink({ href, children }) {
     <li>
       <Link 
         href={href} 
-        className="text-white hover:text-[#FDBA11] transition-colors font-semibold text-lg flex items-center gap-3 group"
+        className="text-white hover:text-[#FDBC1D] transition-colors font-semibold text-lg flex items-center gap-3 group"
       >
         <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

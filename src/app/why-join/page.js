@@ -15,12 +15,12 @@ export default function WhyJoin() {
             backgroundImage: "url('/gallery/54756036640_e17fd09ba2_k.jpg')"
           }}
         ></div>
-        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="absolute inset-0 bg-[#143C68]/90"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <FadeIn>
             <h1 className="text-6xl md:text-8xl font-bold mb-8 text-center text-white">Why You Should Join?</h1>
-            <div className="h-2 w-32 bg-[#FDBA11] mx-auto mb-8 rounded-full"></div>
-            <p className="text-3xl md:text-4xl text-center max-w-4xl mx-auto font-bold text-[#FDBA11]">
+            <div className="h-2 w-32 bg-[#FDBC1D] mx-auto mb-8 rounded-full"></div>
+            <p className="text-3xl md:text-4xl text-center max-w-4xl mx-auto font-bold text-[#FDBC1D]">
               Transform your skills, career, and future
             </p>
           </FadeIn>
@@ -33,8 +33,8 @@ export default function WhyJoin() {
           <FadeIn>
             <div className="text-center mb-20">
               <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">Key Benefits</h2>
-              <div className="h-2 w-24 bg-[#FDBA11] mx-auto mb-8 rounded-full"></div>
-              <p className="text-2xl text-[#4C82C3] font-semibold">Discover what makes ICPC transformative</p>
+              <div className="h-2 w-24 bg-[#FDBC1D] mx-auto mb-8 rounded-full"></div>
+              <p className="text-2xl text-[#143C68] font-semibold">Discover what makes ICPC transformative</p>
             </div>
           </FadeIn>
           <StaggerContainer>
@@ -44,7 +44,7 @@ export default function WhyJoin() {
                   icon={<FaTrophy className="w-20 h-20" />}
                   title="Compete with the Best"
                   description="Compete with the sharpest minds in Sri Lanka"
-                  bgColor="bg-[#4C82C3]"
+                  bgColor="bg-[#143C68]"
                 />
               </StaggerItem>
               <StaggerItem>
@@ -52,7 +52,7 @@ export default function WhyJoin() {
                   icon={<FaLightbulb className="w-20 h-20" />}
                   title="Build Lasting Skills"
                   description="Build skills in algorithms, problem solving, and teamwork that last a lifetime"
-                  bgColor="bg-[#B22E1B]"
+                  bgColor="bg-[#FDBC1D]"
                 />
               </StaggerItem>
               <StaggerItem>
@@ -60,7 +60,7 @@ export default function WhyJoin() {
                   icon={<FaStar className="w-20 h-20" />}
                   title="Earn Recognition"
                   description="Earn national recognition and a ticket to the ICPC Asia West Regional"
-                  bgColor="bg-[#FDBA11]"
+                  bgColor="bg-[#143C68]"
                 />
               </StaggerItem>
             </div>
@@ -69,7 +69,7 @@ export default function WhyJoin() {
           {/* Detailed Benefits */}
           <div className="text-center mb-16">
             <h3 className="text-4xl font-bold text-gray-900 mb-4">In-Depth Benefits</h3>
-            <div className="h-1 w-20 bg-[#4C82C3] mx-auto rounded-full"></div>
+            <div className="h-1 w-20 bg-[#143C68] mx-auto rounded-full"></div>
           </div>
           <StaggerContainer delay={0.3}>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -160,21 +160,21 @@ export default function WhyJoin() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <h2 className="text-5xl font-bold text-center text-gray-900 mb-8">What ICPC Alumni Say</h2>
-            <div className="h-2 w-24 bg-[#FDBA11] mx-auto mb-16 rounded-full"></div>
+            <div className="h-2 w-24 bg-[#FDBC1D] mx-auto mb-16 rounded-full"></div>
           </FadeIn>
           <ScaleIn delay={0.2}>
-            <div className="bg-[#FDBA11] rounded-3xl p-12 md:p-16 shadow-2xl">
-              <blockquote className="text-2xl text-[#4C82C3] font-semibold italic mb-8 text-center">
+            <div className="bg-[#FDBC1D] rounded-3xl p-12 md:p-16 shadow-2xl">
+              <blockquote className="text-2xl text-[#143C68] font-semibold italic mb-8 text-center">
                 &quot;ICPC was the most transformative experience of my university years. It taught me how to think algorithmically, work under pressure, and collaborate effectively. These skills have been invaluable throughout my career.&quot;
               </blockquote>
-              <p className="text-[#4C82C3] font-bold text-xl text-center">— ICPC Alumni & Software Engineer</p>
+              <p className="text-[#143C68] font-bold text-xl text-center">— ICPC Alumni & Software Engineer</p>
             </div>
           </ScaleIn>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-32 bg-[#4C82C3]">
+      <section className="py-32 bg-[#143C68]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <FadeIn>
             <h2 className="text-6xl font-bold text-white mb-8">Ready to Start Your Journey?</h2>
@@ -185,7 +185,7 @@ export default function WhyJoin() {
           <ScaleIn delay={0.3}>
             <Link
               href="/registration"
-              className="inline-flex items-center gap-3 bg-[#FDBA11] text-[#4C82C3] px-12 py-6 rounded-3xl text-2xl font-bold hover:bg-[#FDBA11]/90 transition-all duration-300 shadow-2xl hover:-translate-y-2"
+              className="inline-flex items-center gap-3 bg-[#FDBC1D] text-[#143C68] px-12 py-6 rounded-3xl text-2xl font-bold hover:bg-[#e6a91a] transition-all duration-300 shadow-2xl hover:-translate-y-2"
             >
               Register Your Team Now
               <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -212,12 +212,12 @@ function BenefitCard({ icon, title, description, bgColor }) {
 function DetailedBenefit({ title, description, points }) {
   return (
     <div className="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 p-10">
-      <h3 className="text-3xl font-bold text-[#4C82C3] mb-6">{title}</h3>
+      <h3 className="text-3xl font-bold text-[#143C68] mb-6">{title}</h3>
       <p className="text-gray-700 mb-8 text-lg leading-relaxed">{description}</p>
       <ul className="space-y-4">
         {points.map((point, index) => (
           <li key={`${title}-${index}`} className="flex items-start space-x-4">
-            <svg className="w-8 h-8 text-[#FDBA11] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+            <svg className="w-8 h-8 text-[#FDBC1D] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
             </svg>
             <span className="text-gray-700 text-lg">{point}</span>
