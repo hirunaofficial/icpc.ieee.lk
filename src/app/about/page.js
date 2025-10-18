@@ -16,12 +16,12 @@ export default function About() {
             backgroundImage: "url('/gallery/54755925319_a8c95c4d63_3k.jpg')"
           }}
         ></div>
-        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="absolute inset-0 bg-[#143C68]/90"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <FadeIn>
             <h1 className="text-6xl md:text-8xl font-bold mb-8 text-center text-white">What is ICPC?</h1>
-            <div className="h-2 w-32 bg-[#FDBA11] mx-auto mb-8 rounded-full"></div>
-            <p className="text-3xl md:text-4xl text-center max-w-4xl mx-auto font-bold text-[#FDBA11]">
+            <div className="h-2 w-32 bg-[#FDBC1D] mx-auto mb-8 rounded-full"></div>
+            <p className="text-3xl md:text-4xl text-center max-w-4xl mx-auto font-bold text-[#FDBC1D]">
               The Olympics of Programming
             </p>
           </FadeIn>
@@ -35,7 +35,7 @@ export default function About() {
             <FadeIn>
               <p className="text-2xl text-gray-700 leading-relaxed mb-12 text-center font-semibold">
                 The International Collegiate Programming Contest (ICPC) isn&apos;t just another coding challenge; 
-                it&apos;s <strong className="text-[#4C82C3]">the Olympics of programming</strong>, which is the oldest, largest, and most 
+                it&apos;s <strong className="text-[#143C68]">the Olympics of programming</strong>, which is the oldest, largest, and most 
                 prestigious competitive programming contest in the world.
               </p>
             </FadeIn>
@@ -55,9 +55,9 @@ export default function About() {
             </StaggerContainer>
 
             <ScaleIn delay={0.4}>
-              <div className="bg-[#FDBA11] rounded-2xl p-12 my-16 shadow-2xl">
-                <h2 className="text-4xl font-bold text-[#4C82C3] mb-6 text-center">One Goal</h2>
-                <p className="text-2xl text-center text-[#4C82C3] font-semibold">
+              <div className="bg-[#FDBC1D] rounded-2xl p-12 my-16 shadow-2xl">
+                <h2 className="text-4xl font-bold text-[#143C68] mb-6 text-center">One Goal</h2>
+                <p className="text-2xl text-center text-[#143C68] font-semibold">
                   Solving problems that push the limits of human creativity and teamwork
                 </p>
               </div>
@@ -66,14 +66,14 @@ export default function About() {
             <FadeInLeft delay={0.5}>
               <h2 className="text-4xl font-bold text-gray-900 mb-8 text-center">A Historic Moment for Sri Lanka</h2>
               <p className="text-2xl text-gray-700 leading-relaxed mb-8 text-center font-semibold">
-                And in 2026, <strong className="text-[#4C82C3]">Sri Lanka joins the map</strong>. 
+                And in 2026, <strong className="text-[#143C68]">Sri Lanka joins the map</strong>. 
                 This is your chance to be part of history.
               </p>
             </FadeInLeft>
 
             <FadeInRight delay={0.6}>
               <div className="bg-gray-50 rounded-2xl p-12 my-12 shadow-xl">
-                <h3 className="text-3xl font-bold text-[#4C82C3] mb-8 text-center">The Path to Glory</h3>
+                <h3 className="text-3xl font-bold text-[#143C68] mb-8 text-center">The Path to Glory</h3>
                 <ul className="space-y-6">
                   <PathItem 
                     step="1" 
@@ -96,7 +96,7 @@ export default function About() {
 
             <FadeIn delay={0.7}>
               <h2 className="text-4xl font-bold text-gray-900 mb-10 mt-16 text-center">Why ICPC Matters</h2>
-              <div className="h-2 w-24 bg-[#FDBA11] mx-auto mb-12 rounded-full"></div>
+              <div className="h-2 w-24 bg-[#FDBC1D] mx-auto mb-12 rounded-full"></div>
             </FadeIn>
             <StaggerContainer delay={0.8}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -104,28 +104,28 @@ export default function About() {
                   <FeatureBlock
                     title="Global Recognition"
                     description="ICPC is recognized by top universities and tech companies worldwide. Participating demonstrates exceptional problem-solving abilities and technical skills."
-                    icon={<GlobeAltIcon className="w-12 h-12 text-[#4C82C3]" />}
+                    icon={<GlobeAltIcon className="w-12 h-12 text-[#143C68]" />}
                   />
                 </StaggerItem>
                 <StaggerItem>
                   <FeatureBlock
                     title="Career Opportunities"
                     description="Many ICPC alumni have gone on to work at leading tech companies like Google, Facebook, Microsoft, and more."
-                    icon={<BriefcaseIcon className="w-12 h-12 text-[#4C82C3]" />}
+                    icon={<BriefcaseIcon className="w-12 h-12 text-[#143C68]" />}
                   />
                 </StaggerItem>
                 <StaggerItem>
                   <FeatureBlock
                     title="Skill Development"
                     description="ICPC challenges push you to master algorithms, data structures, and efficient problem-solving under pressure."
-                    icon={<FaChartLine className="w-12 h-12 text-[#4C82C3]" />}
+                    icon={<FaChartLine className="w-12 h-12 text-[#143C68]" />}
                   />
                 </StaggerItem>
                 <StaggerItem>
                   <FeatureBlock
                     title="Networking"
                     description="Connect with brilliant minds from across the country and region, building relationships that last a lifetime."
-                    icon={<UserGroupIcon className="w-12 h-12 text-[#4C82C3]" />}
+                    icon={<UserGroupIcon className="w-12 h-12 text-[#143C68]" />}
                   />
                 </StaggerItem>
               </div>
@@ -135,7 +135,7 @@ export default function About() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-32 bg-[#FDBA11] text-[#4C82C3]">
+      <section className="py-32 bg-[#FDBC1D] text-[#143C68]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <FadeIn>
             <h2 className="text-6xl font-bold mb-8">Ready to Join the Competition?</h2>
@@ -146,7 +146,7 @@ export default function About() {
           <ScaleIn delay={0.3}>
             <Link
               href="/registration"
-              className="inline-flex items-center gap-3 bg-[#4C82C3] text-white px-12 py-6 rounded-3xl text-2xl font-bold hover:bg-[#4C82C3]/90 transition-all duration-300 shadow-2xl hover:-translate-y-2"
+              className="inline-flex items-center gap-3 bg-[#143C68] text-white px-12 py-6 rounded-3xl text-2xl font-bold hover:bg-[#1e4a7a] transition-all duration-300 shadow-2xl hover:-translate-y-2"
             >
               Register Your Team
               <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -163,7 +163,7 @@ export default function About() {
 function StatBox({ number, label }) {
   return (
     <div className="bg-gray-50 rounded-2xl p-8 text-center shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-      <div className="text-5xl font-bold text-[#4C82C3] mb-4">{number}</div>
+      <div className="text-5xl font-bold text-[#143C68] mb-4">{number}</div>
       <div className="text-gray-700 text-lg font-semibold">{label}</div>
     </div>
   );
@@ -172,7 +172,7 @@ function StatBox({ number, label }) {
 function PathItem({ step, title, description }) {
   return (
     <li className="flex items-start space-x-6 p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-      <div className="flex-shrink-0 w-12 h-12 bg-[#4C82C3] text-white rounded-full flex items-center justify-center font-bold text-xl">
+      <div className="flex-shrink-0 w-12 h-12 bg-[#143C68] text-white rounded-full flex items-center justify-center font-bold text-xl">
         {step}
       </div>
       <div>
@@ -188,7 +188,7 @@ function FeatureBlock({ icon, title, description }) {
     <div className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
       <div className="flex items-center justify-center mb-6">{icon}</div>
       <div className="text-center">
-        <h3 className="text-2xl font-bold text-[#4C82C3] mb-4">{title}</h3>
+        <h3 className="text-2xl font-bold text-[#143C68] mb-4">{title}</h3>
         <p className="text-gray-700 text-lg leading-relaxed">{description}</p>
       </div>
     </div>

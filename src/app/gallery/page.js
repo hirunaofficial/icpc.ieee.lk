@@ -35,11 +35,11 @@ export default function Gallery() {
               backgroundImage: "url('/gallery/54762888219_af794c220a_k.jpg')"
             }}
           ></div>
-          <div className="absolute inset-0 bg-black/60"></div>
+          <div className="absolute inset-0 bg-[#143C68]/90"></div>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <h1 className="text-6xl md:text-8xl font-bold mb-8 text-center text-white">Gallery</h1>
-            <div className="h-2 w-32 bg-[#FDBA11] mx-auto mb-8 rounded-full"></div>
-            <p className="text-3xl md:text-4xl text-center max-w-4xl mx-auto font-bold text-[#FDBA11]">
+            <div className="h-2 w-32 bg-[#FDBC1D] mx-auto mb-8 rounded-full"></div>
+            <p className="text-3xl md:text-4xl text-center max-w-4xl mx-auto font-bold text-[#FDBC1D]">
               Glimpses from ICPC competitions around the world
             </p>
           </div>
@@ -52,8 +52,8 @@ export default function Gallery() {
           <FadeIn>
             <div className="text-center mb-20">
               <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">Photo Gallery</h2>
-              <div className="h-2 w-24 bg-[#FDBA11] mx-auto mb-8 rounded-full"></div>
-              <p className="text-2xl text-[#4C82C3] font-semibold">Moments from ICPC competitions worldwide</p>
+              <div className="h-2 w-24 bg-[#FDBC1D] mx-auto mb-8 rounded-full"></div>
+              <p className="text-2xl text-[#143C68] font-semibold">Moments from ICPC competitions worldwide</p>
             </div>
           </FadeIn>
           <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -130,8 +130,8 @@ export default function Gallery() {
           <FadeIn>
             <div className="text-center mb-16">
               <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">Be Part of the Legacy</h2>
-              <div className="h-2 w-24 bg-[#FDBA11] mx-auto mb-8 rounded-full"></div>
-              <p className="text-2xl text-[#4C82C3] font-semibold max-w-3xl mx-auto">
+              <div className="h-2 w-24 bg-[#FDBC1D] mx-auto mb-8 rounded-full"></div>
+              <p className="text-2xl text-[#143C68] font-semibold max-w-3xl mx-auto">
                 Join thousands of passionate programmers who have made their mark in competitive programming
               </p>
             </div>
@@ -140,19 +140,19 @@ export default function Gallery() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <FadeInUp>
               <div className="text-center p-8 bg-gray-50 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                <div className="text-6xl font-bold text-[#4C82C3] mb-4">50+</div>
+                <div className="text-6xl font-bold text-[#143C68] mb-4">50+</div>
                 <div className="text-xl text-gray-700 font-semibold">Countries Participating</div>
               </div>
             </FadeInUp>
             <FadeInUp>
               <div className="text-center p-8 bg-gray-50 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                <div className="text-6xl font-bold text-[#B22E1B] mb-4">65K+</div>
+                <div className="text-6xl font-bold text-[#143C68] mb-4">65K+</div>
                 <div className="text-xl text-gray-700 font-semibold">Students Worldwide</div>
               </div>
             </FadeInUp>
             <FadeInUp>
               <div className="text-center p-8 bg-gray-50 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                <div className="text-6xl font-bold text-[#FDBA11] mb-4">45+</div>
+                <div className="text-6xl font-bold text-[#FDBC1D] mb-4">45+</div>
                 <div className="text-xl text-gray-700 font-semibold">Years of Excellence</div>
               </div>
             </FadeInUp>
@@ -162,16 +162,16 @@ export default function Gallery() {
 
       {/* Call to Action */}
       <FadeIn>
-        <section className="py-24 bg-[#FDBA11]">
+        <section className="py-24 bg-[#FDBC1D]">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-8">Be Part of ICPC Sri Lanka 2026</h2>
-            <p className="text-2xl text-gray-800 mb-12 font-semibold">
+            <h2 className="text-5xl md:text-6xl font-bold text-[#143C68] mb-8">Be Part of ICPC Sri Lanka 2026</h2>
+            <p className="text-2xl text-[#143C68] mb-12 font-semibold">
               Create your own memories at Sri Lanka&apos;s first ICPC competition
             </p>
             <ScaleIn delay={0.3}>
               <Link
                 href="/registration"
-                className="inline-block bg-[#4C82C3] text-white px-12 py-4 rounded-2xl font-bold text-xl hover:bg-[#3a6ba3] transition-all duration-300 hover:-translate-y-1 shadow-xl hover:shadow-2xl"
+                className="inline-block bg-[#143C68] text-white px-12 py-4 rounded-2xl font-bold text-xl hover:bg-[#1e4a7a] transition-all duration-300 hover:-translate-y-1 shadow-xl hover:shadow-2xl"
               >
                 Register Your Team
               </Link>

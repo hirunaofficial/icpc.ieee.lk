@@ -3,8 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #000000;
-  --icpc-blue: #4C82C3;
-  --icpc-yellow: #FDBA11;
+  --icpc-blue: #143C68;
+  --icpc-yellow: #FDBC1D;
   --icpc-red: #B22E1B;
 }
 
@@ -23,7 +23,7 @@ html {
 
 /* Focus styles for accessibility - using ICPC blue */
 *:focus-visible {
-  outline: 2px solid #4C82C3;
+  outline: 2px solid #143C68;
   outline-offset: 2px;
 }
 
@@ -37,10 +37,10 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #4C82C3;
+  background: #143C68;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #FDBA11;
+  background: #FDBC1D;
 }
