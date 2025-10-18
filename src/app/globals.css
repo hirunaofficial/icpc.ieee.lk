@@ -2,28 +2,13 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
-  --icpc-blue: #4C82C3;
-  --icpc-yellow: #FDBA11;
+  --foreground: #000000;
+  --icpc-blue: #143C68;
+  --icpc-yellow: #FDBC1D;
   --icpc-red: #B22E1B;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-  --color-icpc-blue: #4C82C3;
-  --color-icpc-yellow: #FDBA11;
-  --color-icpc-red: #B22E1B;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #f9fafb;
-    --foreground: #111827;
-  }
-}
 
 body {
   background: var(--background);
@@ -36,8 +21,26 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Focus styles for accessibility */
+/* Focus styles for accessibility - using ICPC blue */
 *:focus-visible {
-  outline: 2px solid #3b82f6;
+  outline: 2px solid #143C68;
   outline-offset: 2px;
+}
+
+/* Custom scrollbar using ICPC colors */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #143C68;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FDBC1D;
 }

@@ -112,12 +112,20 @@ export default function FAQ() {
     <main className="min-h-screen bg-gray-50">
       {/* Hero Section */}
       <FadeIn>
-        <section className="bg-[#4C82C3] text-white py-20">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-center">
+        <section className="relative py-32 overflow-hidden">
+          <div 
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: "url('/gallery/54763867697_572b983ab2_k.jpg')"
+            }}
+          ></div>
+          <div className="absolute inset-0 bg-[#143C68]/90"></div>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h1 className="text-6xl md:text-8xl font-bold mb-8 text-white">
               Frequently Asked Questions
             </h1>
-            <p className="text-xl md:text-2xl text-center max-w-4xl mx-auto">
+            <div className="h-2 w-32 bg-[#FDBC1D] mx-auto mb-10 rounded-full"></div>
+            <p className="text-2xl md:text-3xl text-[#FDBC1D] font-semibold max-w-4xl mx-auto">
               Find answers to common questions about ICPC Sri Lanka 2026
             </p>
           </div>
@@ -125,32 +133,32 @@ export default function FAQ() {
       </FadeIn>
 
       {/* FAQ Categories */}
-      <section className="py-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <StaggerContainer className="space-y-12">
+      <section className="py-24 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <StaggerContainer className="space-y-16">
             {faqs.map((category, categoryIndex) => (
               <StaggerItem key={categoryIndex}>
-                <div>
-                  <h2 className="text-3xl font-bold text-gray-900 mb-6 pb-3 border-b-4 border-[#FDBA11]">
+                <div className="bg-white rounded-3xl shadow-2xl p-8 hover:shadow-3xl transition-all duration-300">
+                  <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 pb-4 border-b-4 border-[#FDBC1D] text-center">
                     {category.category}
                   </h2>
-                  <div className="space-y-4">
+                  <div className="space-y-6">
                     {category.questions.map((faq, questionIndex) => {
                       const isOpen = openIndex === `${categoryIndex}-${questionIndex}`;
                       return (
                         <div
                           key={questionIndex}
-                          className="bg-white rounded-lg shadow-md overflow-hidden border-2 border-transparent hover:border-[#4C82C3] transition-colors"
+                          className="bg-gray-50 rounded-2xl overflow-hidden shadow-xl border-2 border-transparent hover:border-[#143C68] transition-all duration-300 hover:shadow-2xl"
                         >
                           <button
                             onClick={() => toggleFAQ(categoryIndex, questionIndex)}
-                            className="w-full text-left px-6 py-4 flex justify-between items-center focus:outline-none"
+                            className="w-full text-left px-8 py-6 flex justify-between items-center focus:outline-none hover:bg-gray-100 transition-colors duration-200"
                           >
-                            <span className="text-lg font-semibold text-gray-900 pr-4">
+                            <span className="text-xl font-bold text-gray-900 pr-4">
                               {faq.question}
                             </span>
                             <svg
-                              className={`w-6 h-6 text-[#4C82C3] flex-shrink-0 transform transition-transform duration-300 ${
+                              className={`w-8 h-8 text-[#143C68] flex-shrink-0 transform transition-transform duration-300 ${
                                 isOpen ? 'rotate-180' : ''
                               }`}
                               fill="none"
@@ -166,8 +174,8 @@ export default function FAQ() {
                             </svg>
                           </button>
                           {isOpen && (
-                            <div className="px-6 py-4 bg-gray-50 border-t border-gray-200">
-                              <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                            <div className="px-8 py-6 bg-white border-t-2 border-[#FDBC1D]">
+                              <p className="text-lg text-gray-700 leading-relaxed font-medium">{faq.answer}</p>
                             </div>
                           )}
                         </div>
@@ -182,22 +190,23 @@ export default function FAQ() {
       </section>
 
       {/* Still Have Questions */}
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="py-24 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <FadeIn>
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-8">
               Still Have Questions?
             </h2>
+            <div className="h-2 w-24 bg-[#FDBC1D] mx-auto mb-10 rounded-full"></div>
           </FadeIn>
           <FadeIn delay={0.2}>
-            <p className="text-xl text-gray-700 mb-8">
+            <p className="text-2xl text-[#143C68] font-semibold mb-12">
               Contact the ICPC Sri Lanka organizing committee for more information
             </p>
           </FadeIn>
           <ScaleIn delay={0.4}>
             <a
               href="mailto:info@icpc.lk"
-              className="inline-block bg-[#4C82C3] text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-[#4C82C3]/90 transition-all duration-300"
+              className="inline-block bg-[#143C68] text-white px-12 py-4 rounded-2xl text-xl font-bold hover:bg-[#1e4a7a] transition-all duration-300 hover:-translate-y-1 shadow-xl hover:shadow-2xl"
             >
               Contact Us
             </a>
@@ -207,16 +216,16 @@ export default function FAQ() {
 
       {/* CTA Section */}
       <FadeIn>
-        <section className="py-16 bg-[#4C82C3]">
+        <section className="py-24 bg-[#FDBC1D]">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-4xl font-bold text-white mb-6">Ready to Register?</h2>
-            <p className="text-xl text-white mb-8">
+            <h2 className="text-5xl md:text-6xl font-bold text-[#143C68] mb-8">Ready to Register?</h2>
+            <p className="text-2xl text-[#143C68] font-semibold mb-12">
               Don&apos;t wait! Registration opens in September 2025
             </p>
             <ScaleIn delay={0.3}>
               <Link
                 href="/registration"
-                className="inline-block bg-[#FDBA11] text-[#4C82C3] px-8 py-4 rounded-full text-lg font-bold hover:bg-[#FDBA11]/90 transition-all duration-300"
+                className="inline-block bg-[#143C68] text-white px-12 py-4 rounded-2xl text-xl font-bold hover:bg-[#1e4a7a] transition-all duration-300 hover:-translate-y-1 shadow-xl hover:shadow-2xl"
               >
                 Registration Details
               </Link>
