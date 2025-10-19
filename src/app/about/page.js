@@ -9,7 +9,7 @@ export default function About() {
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative py-32 overflow-hidden">
+      <section className="relative py-20 sm:py-24 md:py-32 overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
@@ -19,9 +19,9 @@ export default function About() {
         <div className="absolute inset-0 bg-[#143C68]/90"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <FadeIn>
-            <h1 className="text-6xl md:text-8xl font-bold mb-8 text-center text-white">What is ICPC?</h1>
-            <div className="h-2 w-32 bg-[#FDBC1D] mx-auto mb-8 rounded-full"></div>
-            <p className="text-3xl md:text-4xl text-center max-w-4xl mx-auto font-bold text-[#FDBC1D]">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold mb-6 sm:mb-8 text-center text-white">What is ICPC?</h1>
+            <div className="h-2 w-24 sm:w-32 bg-[#FDBC1D] mx-auto mb-6 sm:mb-8 rounded-full"></div>
+            <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-center max-w-4xl mx-auto font-bold text-[#FDBC1D] px-4">
               The Olympics of Programming
             </p>
           </FadeIn>
@@ -29,11 +29,11 @@ export default function About() {
       </section>
 
       {/* Main Content */}
-      <section className="py-24 bg-white">
+      <section className="py-16 sm:py-20 md:py-24 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white rounded-3xl shadow-2xl p-12 md:p-16">
+          <div className="bg-white rounded-2xl sm:rounded-3xl shadow-2xl p-6 sm:p-8 md:p-12 lg:p-16">
             <FadeIn>
-              <p className="text-2xl text-gray-700 leading-relaxed mb-12 text-center font-semibold">
+              <p className="text-lg sm:text-xl md:text-2xl text-gray-700 leading-relaxed mb-8 sm:mb-12 text-center font-semibold px-4">
                 The International Collegiate Programming Contest (ICPC) isn&apos;t just another coding challenge; 
                 it&apos;s <strong className="text-[#143C68]">the Olympics of programming</strong>, which is the oldest, largest, and most 
                 prestigious competitive programming contest in the world.
