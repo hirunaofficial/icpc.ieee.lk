@@ -28,7 +28,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section with Background Slider */}
-      <section className="relative h-screen min-h-[900px] overflow-hidden bg-white">
+      <section className="relative h-screen min-h-[700px] sm:min-h-[800px] md:min-h-[900px] overflow-hidden bg-white">
         {/* Background Images Slider */}
         <div className="absolute inset-0">
           {heroImages.map((image, index) => (
@@ -66,24 +66,24 @@ export default function Home() {
 
               {/* ICPC Logo */}
               <FadeIn duration={0.8} delay={0.2}>
-                <div className="mb-8 flex justify-center">
+                <div className="mb-6 sm:mb-8 flex justify-center">
                   <div className="relative">
-                    <div className="absolute inset-0 bg-[#143C68] rounded-3xl blur-lg opacity-30 scale-110"></div>
-                    <div className="relative bg-white/95 backdrop-blur-sm rounded-3xl p-6 shadow-2xl border border-[#FDBC1D]/20">
-                    <Image
-                      src="/logo.png"
-                      alt="ICPC Logo"
-                      width={100}
-                      height={100}
-                      className="w-24 h-24 object-contain"
-                    />
+                    <div className="absolute inset-0 bg-[#143C68] rounded-2xl sm:rounded-3xl blur-lg opacity-30 scale-110"></div>
+                    <div className="relative bg-white/95 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-4 sm:p-6 shadow-2xl border border-[#FDBC1D]/20">
+                      <Image
+                        src="/logo.png"
+                        alt="ICPC Logo"
+                        width={80}
+                        height={80}
+                        className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 object-contain"
+                      />
                     </div>
                   </div>
                 </div>
               </FadeIn>
               
               <ScaleIn delay={0.4} duration={0.8}>
-                <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 text-white tracking-tight">
+                <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold mb-4 sm:mb-6 text-white tracking-tight">
                   <span className="text-white">
                     ICPC Sri Lanka
                   </span>
@@ -93,41 +93,41 @@ export default function Home() {
               </ScaleIn>
 
               <FadeIn delay={0.6} duration={0.8}>
-                <div className="flex items-center justify-center gap-4 mb-6">
-                  <div className="h-1 w-16 bg-[#FDBC1D]/50 rounded-full"></div>
-                  <div className="h-2 w-32 bg-[#FDBC1D] rounded-full"></div>
-                  <div className="h-1 w-16 bg-[#FDBC1D]/50 rounded-full"></div>
+                <div className="flex items-center justify-center gap-2 sm:gap-4 mb-4 sm:mb-6">
+                  <div className="h-1 w-12 sm:w-16 bg-[#FDBC1D]/50 rounded-full"></div>
+                  <div className="h-2 w-24 sm:w-32 bg-[#FDBC1D] rounded-full"></div>
+                  <div className="h-1 w-12 sm:w-16 bg-[#FDBC1D]/50 rounded-full"></div>
                 </div>
               </FadeIn>
 
               <SlideInBottom delay={0.8} duration={0.8}>
-                <p className="text-2xl md:text-4xl mb-6 text-[#FDBC1D] font-bold tracking-wide drop-shadow-lg">
+                <p className="text-xl sm:text-2xl md:text-4xl mb-4 sm:mb-6 text-[#FDBC1D] font-bold tracking-wide drop-shadow-lg">
                   Code Beyond Borders
                 </p>
               </SlideInBottom>
 
               <SlideInBottom delay={1} duration={0.8}>
-                <p className="text-lg md:text-xl mb-12 max-w-4xl mx-auto leading-relaxed text-white/95 font-medium">
+                <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 max-w-4xl mx-auto leading-relaxed text-white/95 font-medium px-4">
                   For the first time ever, Sri Lanka enters the world&apos;s biggest stage of competitive programming.
                   <span className="text-[#FDBC1D] font-bold"> Join us in making history.</span>
                 </p>
               </SlideInBottom>
               
               <SlideInBottom delay={1.2} duration={0.8}>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center w-full max-w-3xl mx-auto mb-12">
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center w-full max-w-3xl mx-auto mb-8 sm:mb-12 px-4">
                   <Link
                     href="/registration"
-                    className="group relative inline-flex items-center justify-center gap-3 bg-[#FDBC1D] text-[#143C68] px-10 py-4 rounded-2xl text-xl font-bold hover:bg-[#e6a91a] transition-all duration-300 shadow-2xl transform hover:scale-105 w-full sm:w-auto"
+                    className="group relative inline-flex items-center justify-center gap-2 sm:gap-3 bg-[#FDBC1D] text-[#143C68] px-6 sm:px-10 py-3 sm:py-4 rounded-2xl text-lg sm:text-xl font-bold hover:bg-[#e6a91a] transition-all duration-300 shadow-2xl transform hover:scale-105 w-full sm:w-auto"
                   >
-                    <FaRocket className="w-5 h-5 group-hover:animate-bounce" />
+                    <FaRocket className="w-4 h-4 sm:w-5 sm:h-5 group-hover:animate-bounce" />
                     <span>Register Now</span>
-                    <ArrowRightIcon className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                    <ArrowRightIcon className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
                   </Link>
                   <Link
                     href="/about"
-                    className="group inline-flex items-center justify-center gap-3 bg-white/20 backdrop-blur-md border border-white/30 text-white px-10 py-4 rounded-2xl text-xl font-bold hover:bg-white hover:text-[#143C68] transition-all duration-300 shadow-2xl transform hover:scale-105 w-full sm:w-auto"
+                    className="group inline-flex items-center justify-center gap-2 sm:gap-3 bg-white/20 backdrop-blur-md border border-white/30 text-white px-6 sm:px-10 py-3 sm:py-4 rounded-2xl text-lg sm:text-xl font-bold hover:bg-white hover:text-[#143C68] transition-all duration-300 shadow-2xl transform hover:scale-105 w-full sm:w-auto"
                   >
-                    <PlayIcon className="w-5 h-5" />
+                    <PlayIcon className="w-4 h-4 sm:w-5 sm:h-5" />
                     <span>Learn More</span>
                   </Link>
                 </div>
@@ -135,25 +135,25 @@ export default function Home() {
 
               {/* Quick Stats */}
               <FadeIn delay={1.4} duration={0.8}>
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6 max-w-5xl mx-auto">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 md:gap-6 max-w-5xl mx-auto px-4">
                   <HoverScale>
-                    <div className="group bg-white/95 backdrop-blur-md border border-[#FDBC1D]/30 rounded-2xl p-6 shadow-2xl text-center hover:bg-white transition-all duration-300">
-                      <div className="text-3xl md:text-4xl font-bold text-[#143C68] mb-2 group-hover:text-[#FDBC1D] transition-colors">100+</div>
-                      <div className="text-base md:text-lg text-[#143C68] font-semibold">Countries</div>
+                    <div className="group bg-white/95 backdrop-blur-md border border-[#FDBC1D]/30 rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-2xl text-center hover:bg-white transition-all duration-300">
+                      <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#143C68] mb-1 sm:mb-2 group-hover:text-[#FDBC1D] transition-colors">100+</div>
+                      <div className="text-sm sm:text-base md:text-lg text-[#143C68] font-semibold">Countries</div>
                       <div className="text-xs text-gray-600 mt-1">Participating</div>
                     </div>
                   </HoverScale>
                   <HoverScale>
-                    <div className="group bg-white/95 backdrop-blur-md border border-[#FDBC1D]/30 rounded-2xl p-6 shadow-2xl text-center hover:bg-white transition-all duration-300">
-                      <div className="text-3xl md:text-4xl font-bold text-[#143C68] mb-2 group-hover:text-[#FDBC1D] transition-colors">3,000+</div>
-                      <div className="text-base md:text-lg text-[#143C68] font-semibold">Universities</div>
+                    <div className="group bg-white/95 backdrop-blur-md border border-[#FDBC1D]/30 rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-2xl text-center hover:bg-white transition-all duration-300">
+                      <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#143C68] mb-1 sm:mb-2 group-hover:text-[#FDBC1D] transition-colors">3,000+</div>
+                      <div className="text-sm sm:text-base md:text-lg text-[#143C68] font-semibold">Universities</div>
                       <div className="text-xs text-gray-600 mt-1">Worldwide</div>
                     </div>
                   </HoverScale>
                   <HoverScale>
-                    <div className="group bg-white/95 backdrop-blur-md border border-[#FDBC1D]/30 rounded-2xl p-6 shadow-2xl text-center hover:bg-white transition-all duration-300">
-                      <div className="text-3xl md:text-4xl font-bold text-[#143C68] mb-2 group-hover:text-[#FDBC1D] transition-colors">60,000+</div>
-                      <div className="text-base md:text-lg text-[#143C68] font-semibold">Students</div>
+                    <div className="group bg-white/95 backdrop-blur-md border border-[#FDBC1D]/30 rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-2xl text-center hover:bg-white transition-all duration-300">
+                      <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#143C68] mb-1 sm:mb-2 group-hover:text-[#FDBC1D] transition-colors">60,000+</div>
+                      <div className="text-sm sm:text-base md:text-lg text-[#143C68] font-semibold">Students</div>
                       <div className="text-xs text-gray-600 mt-1">Competing</div>
                     </div>
                   </HoverScale>

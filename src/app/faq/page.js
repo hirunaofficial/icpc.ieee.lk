@@ -112,7 +112,7 @@ export default function FAQ() {
     <main className="min-h-screen bg-gray-50">
       {/* Hero Section */}
       <FadeIn>
-        <section className="relative py-32 overflow-hidden">
+        <section className="relative py-20 sm:py-24 md:py-32 overflow-hidden">
           <div 
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{
@@ -121,11 +121,11 @@ export default function FAQ() {
           ></div>
           <div className="absolute inset-0 bg-[#143C68]/90"></div>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-            <h1 className="text-6xl md:text-8xl font-bold mb-8 text-white">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold mb-6 sm:mb-8 text-white px-4">
               Frequently Asked Questions
             </h1>
-            <div className="h-2 w-32 bg-[#FDBC1D] mx-auto mb-10 rounded-full"></div>
-            <p className="text-2xl md:text-3xl text-[#FDBC1D] font-semibold max-w-4xl mx-auto">
+            <div className="h-2 w-24 sm:w-32 bg-[#FDBC1D] mx-auto mb-8 sm:mb-10 rounded-full"></div>
+            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-[#FDBC1D] font-semibold max-w-4xl mx-auto px-4">
               Find answers to common questions about ICPC Sri Lanka 2026
             </p>
           </div>
