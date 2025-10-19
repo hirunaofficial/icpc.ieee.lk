@@ -8,7 +8,7 @@ export default function WhyJoin() {
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative py-32 overflow-hidden">
+      <section className="relative py-20 sm:py-24 md:py-32 overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
@@ -18,9 +18,9 @@ export default function WhyJoin() {
         <div className="absolute inset-0 bg-[#143C68]/90"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <FadeIn>
-            <h1 className="text-6xl md:text-8xl font-bold mb-8 text-center text-white">Why You Should Join?</h1>
-            <div className="h-2 w-32 bg-[#FDBC1D] mx-auto mb-8 rounded-full"></div>
-            <p className="text-3xl md:text-4xl text-center max-w-4xl mx-auto font-bold text-[#FDBC1D]">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold mb-6 sm:mb-8 text-center text-white px-4">Why You Should Join?</h1>
+            <div className="h-2 w-24 sm:w-32 bg-[#FDBC1D] mx-auto mb-6 sm:mb-8 rounded-full"></div>
+            <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-center max-w-4xl mx-auto font-bold text-[#FDBC1D] px-4">
               Transform your skills, career, and future
             </p>
           </FadeIn>
@@ -28,17 +28,17 @@ export default function WhyJoin() {
       </section>
 
       {/* Main Benefits */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-16 sm:py-20 md:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <div className="text-center mb-20">
-              <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">Key Benefits</h2>
-              <div className="h-2 w-24 bg-[#FDBC1D] mx-auto mb-8 rounded-full"></div>
-              <p className="text-2xl text-[#143C68] font-semibold">Discover what makes ICPC transformative</p>
+            <div className="text-center mb-12 sm:mb-16 md:mb-20">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6 px-4">Key Benefits</h2>
+              <div className="h-2 w-20 sm:w-24 bg-[#FDBC1D] mx-auto mb-6 sm:mb-8 rounded-full"></div>
+              <p className="text-lg sm:text-xl md:text-2xl text-[#143C68] font-semibold px-4">Discover what makes ICPC transformative</p>
             </div>
           </FadeIn>
           <StaggerContainer>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-20">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 md:gap-10 mb-12 sm:mb-16 md:mb-20">
               <StaggerItem>
                 <BenefitCard
                   icon={<FaTrophy className="w-20 h-20" />}
