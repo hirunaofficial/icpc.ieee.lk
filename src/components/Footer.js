@@ -145,7 +145,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t-4 border-[#FDBC1D] pt-8 sm:pt-12">
-          <div className="flex flex-col md:flex-row justify-between items-center">
+          <div className="flex flex-col md:flex-row justify-between items-center mb-6">
             <div className="text-center md:text-left mb-4 sm:mb-6 md:mb-0">
               <p className="text-white font-bold text-base sm:text-lg md:text-xl">&copy; {new Date().getFullYear()} ICPC Sri Lanka. All rights reserved.</p>
               <p className="text-[#FDBC1D] font-bold text-lg sm:text-xl md:text-2xl mt-2 sm:mt-3">Code Beyond Borders</p>
@@ -154,6 +154,22 @@ export default function Footer() {
               <FaMapMarkerAlt className="w-5 h-5 sm:w-6 sm:h-6 text-[#FDBC1D]" />
               <span className="font-bold text-base sm:text-lg">Sri Lanka</span>
             </div>
+          </div>
+          <div className="text-center border-t border-white/20 pt-6">
+            <p className="text-white/90 text-sm sm:text-base">
+              Developed by{' '}
+              <a
+                href="https://www.hiruna.dev"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#FDBC1D] hover:text-[#FDBC1D] font-bold transition-colors inline-flex items-center gap-1 group"
+              >
+                Hiruna Gallage
+                <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            </p>
           </div>
         </div>
       </div>
