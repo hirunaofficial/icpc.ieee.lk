@@ -10,7 +10,7 @@ export default function Navbar() {
 
   return (
     <nav className="bg-white shadow-lg sticky top-0 z-50 border-b-4 border-[#FDBC1D]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20 sm:h-24">
           {/* Logo and Title */}
           <Link href="/" className="flex items-center space-x-2 sm:space-x-4 group">
@@ -35,18 +35,20 @@ export default function Navbar() {
             <NavLink href="/about">About</NavLink>
             <NavLink href="/why-join">Why Join</NavLink>
             <NavLink href="/timeline">Timeline</NavLink>
-            <NavLink href="/gallery">Gallery</NavLink>
             <NavLink href="/faq">FAQ</NavLink>
+            <NavLink href="/gallery">Gallery</NavLink>
+            <NavLink href="/staff">Staff</NavLink>
+            <NavLink href="/sponsors">Support Us</NavLink>
           </div>
 
           {/* CTA Button */}
           <div className="hidden lg:block">
             <Link
               href="/registration"
-              className="inline-flex items-center gap-2 sm:gap-3 bg-[#FDBC1D] text-[#143C68] px-6 sm:px-8 py-3 sm:py-4 rounded-2xl text-sm sm:text-base font-bold hover:bg-[#143C68] hover:text-white transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105"
+              className="inline-flex items-center gap-2 bg-[#FDBC1D] text-[#143C68] px-6 py-3 rounded-2xl text-sm font-bold hover:bg-[#143C68] hover:text-white transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105"
             >
               Register Now
-              <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </Link>
@@ -74,8 +76,10 @@ export default function Navbar() {
               <MobileNavLink href="/about" onClick={() => setIsMenuOpen(false)}>About</MobileNavLink>
               <MobileNavLink href="/why-join" onClick={() => setIsMenuOpen(false)}>Why Join</MobileNavLink>
               <MobileNavLink href="/timeline" onClick={() => setIsMenuOpen(false)}>Timeline</MobileNavLink>
-              <MobileNavLink href="/gallery" onClick={() => setIsMenuOpen(false)}>Gallery</MobileNavLink>
               <MobileNavLink href="/faq" onClick={() => setIsMenuOpen(false)}>FAQ</MobileNavLink>
+              <MobileNavLink href="/gallery" onClick={() => setIsMenuOpen(false)}>Gallery</MobileNavLink>
+              <MobileNavLink href="/staff" onClick={() => setIsMenuOpen(false)}>Staff</MobileNavLink>
+              <MobileNavLink href="/sponsors" onClick={() => setIsMenuOpen(false)}>Support Us</MobileNavLink>
               <div className="px-4 pt-4 sm:pt-6">
                 <Link
                   href="/registration"
@@ -97,7 +101,7 @@ function NavLink({ href, children }) {
   return (
     <Link
       href={href}
-      className="px-5 py-3 rounded-xl text-black font-semibold hover:bg-[#143C68] hover:text-white transition-all duration-300 hover:shadow-lg transform hover:scale-105"
+      className="px-4 py-3 rounded-xl text-black font-semibold hover:bg-[#143C68] hover:text-white transition-all duration-300 hover:shadow-lg transform hover:scale-105"
     >
       {children}
     </Link>

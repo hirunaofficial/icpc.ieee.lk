@@ -1,0 +1,90 @@
+{
+  "events": [
+    {
+      "id": "registrations-open",
+      "date": "11th November 2025",
+      "title": "Registrations Open",
+      "description": "Team registration opens for universities across Sri Lanka. Form your team of 3 students and find a faculty coach to register.",
+      "icon": "FaEdit",
+      "color": "bg-[#143C68]",
+      "highlight": false,
+      "actions": [
+        "Form your team (3 students)",
+        "Find a faculty coach",
+        "Register online"
+      ]
+    },
+    {
+      "id": "registrations-close",
+      "date": "10th December 2025",
+      "title": "Registrations Close",
+      "description": "Registration deadline for teams. Make sure to complete your registration before this date to secure your spot in the competition.",
+      "icon": "FaCheckCircle",
+      "color": "bg-[#143C68]",
+      "highlight": false,
+      "actions": [
+        "Complete team registration",
+        "Submit all required documents",
+        "Confirm coach registration"
+      ]
+    },
+    {
+      "id": "online-round",
+      "date": "December 14th 2025",
+      "title": "Online Round",
+      "description": "An online preliminary round to help teams prepare and get familiar with the contest format.",
+      "icon": "FaLaptopCode",
+      "color": "bg-[#143C68]",
+      "highlight": false,
+      "actions": [
+        "Practice problems available",
+        "Get familiar with contest platform",
+        "Warm up with your team"
+      ]
+    },
+    {
+      "id": "onsite-regional",
+      "date": "04th January 2026",
+      "title": "Sri Lanka Onsite Regional",
+      "description": "The main national contest held onsite. This is where history will be made as Sri Lanka hosts its first-ever ICPC contest!",
+      "icon": "FaTrophy",
+      "color": "bg-[#FDBC1D]",
+      "highlight": true,
+      "actions": [
+        "5-hour onsite competition",
+        "Solve 5-10 programming problems",
+        "Compete for national championship",
+        "Winners qualify for Asia West Regional"
+      ]
+    },
+    {
+      "id": "asia-west-regional",
+      "date": "March 2026",
+      "title": "ICPC Asia West Regional",
+      "description": "The champion team from Sri Lanka will represent the country at the ICPC Asia West Regional Contest.",
+      "icon": "FaGlobeAsia",
+      "color": "bg-[#143C68]",
+      "highlight": false,
+      "actions": [
+        "Represent Sri Lanka internationally",
+        "Compete with top teams from Asia West",
+        "Potential advancement to World Finals"
+      ]
+    },
+    {
+      "id": "world-finals",
+      "date": "August 2026",
+      "title": "ICPC World Finals",
+      "description": "The ultimate destination - compete with the world's best programming teams at the ICPC World Finals.",
+      "icon": "FaGlobeAsia",
+      "color": "bg-[#143C68]",
+      "highlight": false,
+      "actions": [
+        "Global competition",
+        "Meet teams from 100+ countries",
+        "Compete for world championship"
+      ]
+    }
+  ]
+}
+
