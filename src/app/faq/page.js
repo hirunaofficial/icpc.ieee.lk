@@ -63,7 +63,7 @@ export default function FAQ() {
         },
         {
           question: 'Where will the contest be held?',
-          answer: 'The contest location will be announced closer to the event date. It will be held in a major city in Sri Lanka with proper facilities.'
+          answer: 'The contest location will be announced closer to the event date. It will be held in University of Peradeniya.'
         }
       ]
     },
@@ -205,7 +205,7 @@ export default function FAQ() {
           </FadeIn>
           <ScaleIn delay={0.4}>
             <a
-              href="mailto:info@icpc.lk"
+              href="mailto:icpc@sites.pdn.ac.lk"
               className="inline-block bg-[#143C68] text-white px-12 py-4 rounded-2xl text-xl font-bold hover:bg-[#1e4a7a] transition-all duration-300 hover:-translate-y-1 shadow-xl hover:shadow-2xl"
             >
               Contact Us
@@ -220,7 +220,7 @@ export default function FAQ() {
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-5xl md:text-6xl font-bold text-[#143C68] mb-8">Ready to Register?</h2>
             <p className="text-2xl text-[#143C68] font-semibold mb-12">
-              Don&apos;t wait! Registration opens in September 2025
+              Don&apos;t wait! Registration opens on 11th November 2025
             </p>
             <ScaleIn delay={0.3}>
               <Link

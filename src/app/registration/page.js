@@ -20,7 +20,9 @@ import {
   FaWhatsapp,
   FaGlobe,
   FaLightbulb,
-  FaCheckCircle
+  FaCheckCircle,
+  FaFacebook,
+  FaLinkedin
 } from 'react-icons/fa';
 import { FadeIn, ScaleIn, StaggerContainer, StaggerItem } from '@/components/AnimatedSection';
 
@@ -118,10 +120,9 @@ export default function Registration() {
                 icon={<FaMoneyBill className="w-8 h-8" />}
                 title="Registration Fee"
                 items={[
-                  'LKR 3,000 – 5,000 per team',
+                  'LKR 2,000 per team (Onsite Round)',
                   'Covers meals on contest day',
                   'Covers event logistics',
-                  'Early bird discounts may apply'
                 ]}
               />
             </StaggerItem>
@@ -145,7 +146,7 @@ export default function Registration() {
               <InfoItem
                 icon={<FaCalendar className="w-6 h-6" />}
                 title="Registration Opens"
-                content="September 2025"
+                content="11th November 2025"
               />
               <InfoItem
                 icon={<FaBuilding className="w-6 h-6" />}
@@ -172,17 +173,54 @@ export default function Registration() {
         </div>
       </section>
 
-      {/* Partnership Opportunities Section */}
-      <section className="py-24 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Stay Connected Section */}
+      <section className="py-24 bg-gradient-to-r from-[#143C68] to-[#1e4a7a]">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <FadeIn>
-            <div className="text-center mb-20">
-              <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">Partnership Opportunities</h2>
-              <div className="h-2 w-32 bg-[#FDBC1D] mx-auto mb-8 rounded-full"></div>
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Stay Connected</h2>
+            <div className="h-2 w-24 bg-[#FDBC1D] mx-auto mb-8 rounded-full"></div>
+            <p className="text-xl md:text-2xl text-white/90 mb-10 max-w-2xl mx-auto">
+              Follow us on social media for the latest updates, announcements, and important information about <br/>ICPC Sri Lanka 2026
+            </p>
+          </FadeIn>
+          <FadeIn delay={0.2}>
+            <div className="flex justify-center items-center gap-4 flex-wrap">
+              <a
+                href="https://www.facebook.com/icpclk"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 bg-white text-[#143C68] px-6 py-3 rounded-xl font-bold hover:bg-[#FDBC1D] hover:text-[#143C68] transition-all duration-300 shadow-lg hover:shadow-2xl transform hover:scale-105"
+              >
+                <FaFacebook className="w-6 h-6" />
+                <span>Facebook</span>
+              </a>
+              <a
+                href="https://whatsapp.com/channel/0029VbB9vyIHbFV7qVYULT41"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 bg-[#25D366] text-white px-6 py-3 rounded-xl font-bold hover:bg-white hover:text-[#25D366] transition-all duration-300 shadow-lg hover:shadow-2xl transform hover:scale-105"
+              >
+                <FaWhatsapp className="w-6 h-6" />
+                <span>WhatsApp Channel</span>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/icpclk"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 bg-white text-[#143C68] px-6 py-3 rounded-xl font-bold hover:bg-[#FDBC1D] hover:text-[#143C68] transition-all duration-300 shadow-lg hover:shadow-2xl transform hover:scale-105"
+              >
+                <FaLinkedin className="w-6 h-6" />
+                <span>LinkedIn</span>
+              </a>
+              <a
+                href="mailto:icpc@sites.pdn.ac.lk"
+                className="flex items-center gap-3 bg-white text-[#143C68] px-6 py-3 rounded-xl font-bold hover:bg-[#FDBC1D] hover:text-[#143C68] transition-all duration-300 shadow-lg hover:shadow-2xl transform hover:scale-105"
+              >
+                <FaEnvelope className="w-6 h-6" />
+                <span>Email Us</span>
+              </a>
             </div>
           </FadeIn>
-          
-          <PartnershipContent />
         </div>
       </section>
 
@@ -215,7 +253,7 @@ export default function Registration() {
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-5xl md:text-6xl font-bold text-[#143C68] mb-8">Ready to Register?</h2>
             <p className="text-2xl text-[#143C68] font-semibold mb-12">
-              Registration opens in September 2025. Be prepared!
+              Registration opens on 11th November 2025. Be prepared!
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <ScaleIn delay={0.3}>
@@ -486,11 +524,12 @@ function RegionalRegistrationContent() {
       </div>
       
       <div className="pt-6 sm:pt-8 border-t-2 border-gray-200">
+        {/* TODO: Unlock this button when Regional Onsite Round registration opens */}
         <button
-          onClick={() => setShowRegistrationSteps(true)}
-          className="w-full sm:w-auto px-8 sm:px-12 py-3 sm:py-4 bg-[#143C68] text-white rounded-xl sm:rounded-2xl text-base sm:text-lg md:text-xl font-bold hover:bg-[#1e4a7a] transition-all duration-300 hover:-translate-y-1 shadow-xl hover:shadow-2xl"
+          disabled
+          className="w-full sm:w-auto px-8 sm:px-12 py-3 sm:py-4 bg-gray-400 text-white rounded-xl sm:rounded-2xl text-base sm:text-lg md:text-xl font-bold cursor-not-allowed opacity-60"
         >
-          Proceed to Register
+          Proceed to Register (Coming Soon)
         </button>
       </div>
     </div>
@@ -570,118 +609,6 @@ function InfoItem({ icon, title, content }) {
       <div>
         <h4 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">{title}</h4>
         <p className="text-base sm:text-lg text-gray-700 font-medium">{content}</p>
-      </div>
-    </div>
-  );
-}
-
-function PartnershipContent() {
-  return (
-    <div className="max-w-6xl mx-auto">
-      <div className="bg-white rounded-2xl sm:rounded-3xl shadow-2xl p-4 sm:p-6 md:p-8 lg:p-12 xl:p-16">
-        {/* Hero Section */}
-        <FadeIn>
-          <div className="text-center mb-12 sm:mb-16">
-            <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#143C68] mb-4 sm:mb-6 px-4">
-              Are You Ready for a Global Collaboration?
-            </h3>
-            <div className="h-2 w-20 sm:w-24 bg-[#FDBC1D] mx-auto mb-6 sm:mb-8 rounded-full"></div>
-          </div>
-        </FadeIn>
-
-        {/* Why Sponsor Section */}
-        <FadeIn delay={0.2}>
-          <div className="mb-12 sm:mb-16">
-            <h4 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#143C68] mb-4 sm:mb-6 text-center px-4">
-              Why Sponsor ICPC Sri Lanka 2026?
-            </h4>
-            <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed text-center max-w-4xl mx-auto px-4">
-              ICPC Sri Lanka is the premier programming competition in the country, attracting the brightest minds from top universities. 
-              Sponsoring this event gives your organization a strategic advantage in talent acquisition, brand positioning, and innovation leadership.
-            </p>
-          </div>
-        </FadeIn>
-
-        {/* Key Benefits Section */}
-        <FadeIn delay={0.3}>
-          <div className="mb-8 sm:mb-12">
-            <h4 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#143C68] mb-8 sm:mb-12 text-center px-4">
-              Key Benefits
-            </h4>
-            <div className="h-1 w-16 sm:w-20 bg-[#FDBC1D] mx-auto mb-8 sm:mb-12 rounded-full"></div>
-            
-            <StaggerContainer>
-              <div className="space-y-6 sm:space-y-8">
-                <StaggerItem>
-                  <BenefitCard
-                    icon={<FaGlobe className="w-10 h-10" />}
-                    title="Be Part of a Global Legacy"
-                    description="Take part in the most prestigious programming competition in the world and connect with a global community of top programmers and innovators."
-                  />
-                </StaggerItem>
-                <StaggerItem>
-                  <BenefitCard
-                    icon={<FaLightbulb className="w-10 h-10" />}
-                    title="Support Innovation"
-                    description="Help students develop critical skills in algorithms, problem solving, and teamwork that prepare them for future technology challenges."
-                  />
-                </StaggerItem>
-                <StaggerItem>
-                  <BenefitCard
-                    icon={<FaUsers className="w-10 h-10" />}
-                    title="Engage Top Talent"
-                    description="Interact with students who excel in problem solving, algorithms, and teamwork."
-                  />
-                </StaggerItem>
-                <StaggerItem>
-                  <BenefitCard
-                    icon={<FaTrophy className="w-10 h-10" />}
-                    title="Tailored Opportunities"
-                    description="Your sponsorship can include workshops, sessions for participants, promotional materials, and other benefits based on your preferences."
-                  />
-                </StaggerItem>
-                <StaggerItem>
-                  <BenefitCard
-                    icon={<FaBuilding className="w-10 h-10" />}
-                    title="Boost Your Brand"
-                    description="Show your commitment to innovation and education while gaining recognition among students, faculty, and the tech community."
-                  />
-                </StaggerItem>
-              </div>
-            </StaggerContainer>
-          </div>
-        </FadeIn>
-
-        {/* CTA Section */}
-        <FadeIn delay={0.5}>
-          <div className="text-center pt-6 sm:pt-8 border-t-2 border-gray-200">
-            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#143C68] mb-6 sm:mb-8 px-4">
-              Partner with ICPC Sri Lanka 2026 and shape the future of technology in Sri Lanka.
-            </p>
-            <a
-              href="mailto:contact@icpc.lk"
-              className="inline-block bg-[#143C68] text-white px-8 sm:px-12 py-3 sm:py-4 rounded-xl sm:rounded-2xl text-base sm:text-lg md:text-xl font-bold hover:bg-[#1e4a7a] transition-all duration-300 hover:-translate-y-1 shadow-xl hover:shadow-2xl"
-            >
-              Contact Us for Partnership
-            </a>
-          </div>
-        </FadeIn>
-      </div>
-    </div>
-  );
-}
-
-function BenefitCard({ icon, title, description }) {
-  return (
-    <div className="bg-gray-50 rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-      <div className="flex items-start space-x-3 sm:space-x-4 md:space-x-6">
-        <div className="flex-shrink-0 text-[#143C68] bg-[#FDBC1D]/20 p-3 sm:p-4 rounded-lg sm:rounded-xl">
-          {icon}
-        </div>
-        <div>
-          <h5 className="text-xl sm:text-2xl font-bold text-[#143C68] mb-2 sm:mb-3">{title}</h5>
-          <p className="text-base sm:text-lg text-gray-700 leading-relaxed">{description}</p>
-        </div>
       </div>
     </div>
   );
