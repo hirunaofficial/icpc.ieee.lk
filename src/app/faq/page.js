@@ -13,11 +13,11 @@ export default function FAQ() {
       questions: [
         {
           question: 'When does registration open?',
-          answer: 'Registration for ICPC Sri Lanka 2026 opens in September 2025. Make sure to register early as spots are limited!'
+          answer: 'Registration for ICPC Sri Lanka 2026 opens in November 2025. Make sure to register early as spots are limited!'
         },
         {
           question: 'How much is the registration fee?',
-          answer: 'The registration fee is LKR 3,000 – 5,000 per team. This covers meals and logistics on contest day.'
+          answer: 'There is no registration fee for the Preliminary Online Round. For the Regional Onsite Round, the registration fee is LKR 2,000 per team. This fee includes meals and logistics on the day of the contest.'
         },
         {
           question: 'Can we register multiple teams from the same university?',
@@ -133,32 +133,32 @@ export default function FAQ() {
       </FadeIn>
 
       {/* FAQ Categories */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-12 sm:py-16 md:py-24 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <StaggerContainer className="space-y-16">
+          <StaggerContainer className="space-y-8 sm:space-y-12 md:space-y-16">
             {faqs.map((category, categoryIndex) => (
               <StaggerItem key={categoryIndex}>
-                <div className="bg-white rounded-3xl shadow-2xl p-8 hover:shadow-3xl transition-all duration-300">
-                  <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 pb-4 border-b-4 border-[#FDBC1D] text-center">
+                <div className="bg-white rounded-2xl sm:rounded-3xl shadow-2xl p-4 sm:p-6 md:p-8 hover:shadow-3xl transition-all duration-300">
+                  <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 sm:mb-8 pb-3 sm:pb-4 border-b-4 border-[#FDBC1D] text-center">
                     {category.category}
                   </h2>
-                  <div className="space-y-6">
+                  <div className="space-y-4 sm:space-y-6">
                     {category.questions.map((faq, questionIndex) => {
                       const isOpen = openIndex === `${categoryIndex}-${questionIndex}`;
                       return (
                         <div
                           key={questionIndex}
-                          className="bg-gray-50 rounded-2xl overflow-hidden shadow-xl border-2 border-transparent hover:border-[#143C68] transition-all duration-300 hover:shadow-2xl"
+                          className="bg-gray-50 rounded-xl sm:rounded-2xl overflow-hidden shadow-xl border-2 border-transparent hover:border-[#143C68] transition-all duration-300 hover:shadow-2xl"
                         >
                           <button
                             onClick={() => toggleFAQ(categoryIndex, questionIndex)}
-                            className="w-full text-left px-8 py-6 flex justify-between items-center focus:outline-none hover:bg-gray-100 transition-colors duration-200"
+                            className="w-full text-left px-4 sm:px-6 md:px-8 py-4 sm:py-6 flex justify-between items-center focus:outline-none hover:bg-gray-100 transition-colors duration-200"
                           >
-                            <span className="text-xl font-bold text-gray-900 pr-4">
+                            <span className="text-base sm:text-lg md:text-xl font-bold text-gray-900 pr-2 sm:pr-4">
                               {faq.question}
                             </span>
                             <svg
-                              className={`w-8 h-8 text-[#143C68] flex-shrink-0 transform transition-transform duration-300 ${
+                              className={`w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 text-[#143C68] flex-shrink-0 transform transition-transform duration-300 ${
                                 isOpen ? 'rotate-180' : ''
                               }`}
                               fill="none"
@@ -174,8 +174,8 @@ export default function FAQ() {
                             </svg>
                           </button>
                           {isOpen && (
-                            <div className="px-8 py-6 bg-white border-t-2 border-[#FDBC1D]">
-                              <p className="text-lg text-gray-700 leading-relaxed font-medium">{faq.answer}</p>
+                            <div className="px-4 sm:px-6 md:px-8 py-4 sm:py-6 bg-white border-t-2 border-[#FDBC1D]">
+                              <p className="text-base sm:text-lg text-gray-700 leading-relaxed font-medium">{faq.answer}</p>
                             </div>
                           )}
                         </div>
