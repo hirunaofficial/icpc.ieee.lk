@@ -177,7 +177,7 @@ export default function Home() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-32 bg-white relative overflow-hidden">
+      <section className="py-16 sm:py-24 md:py-32 bg-white relative overflow-hidden">
         {/* Background Elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-20 right-20 w-72 h-72 bg-[#143C68]/5 rounded-full blur-3xl"></div>
@@ -186,20 +186,20 @@ export default function Home() {
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <FadeIn>
-            <div className="text-center mb-24">
-              <div className="inline-flex items-center gap-3 bg-[#143C68]/10 rounded-full px-6 py-3 mb-8">
-                <TrophyIcon className="w-6 h-6 text-[#143C68]" />
-                <span className="text-[#143C68] font-semibold">Global Recognition</span>
+            <div className="text-center mb-12 sm:mb-16 md:mb-24">
+              <div className="inline-flex items-center gap-2 sm:gap-3 bg-[#143C68]/10 rounded-full px-4 sm:px-6 py-2 sm:py-3 mb-6 sm:mb-8">
+                <TrophyIcon className="w-5 h-5 sm:w-6 sm:h-6 text-[#143C68]" />
+                <span className="text-sm sm:text-base text-[#143C68] font-semibold">Global Recognition</span>
               </div>
-              <h2 className="text-6xl md:text-7xl font-bold text-[#143C68] mb-8">
+              <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#143C68] mb-6 sm:mb-8">
                 The Global Stage
               </h2>
-              <div className="flex items-center justify-center gap-4 mb-8">
-                <div className="h-1 w-20 bg-[#FDBC1D]/50 rounded-full"></div>
-                <div className="h-2 w-40 bg-[#FDBC1D] rounded-full"></div>
-                <div className="h-1 w-20 bg-[#FDBC1D]/50 rounded-full"></div>
+              <div className="flex items-center justify-center gap-2 sm:gap-4 mb-6 sm:mb-8">
+                <div className="h-1 w-12 sm:w-16 md:w-20 bg-[#FDBC1D]/50 rounded-full"></div>
+                <div className="h-2 w-24 sm:w-32 md:w-40 bg-[#FDBC1D] rounded-full"></div>
+                <div className="h-1 w-12 sm:w-16 md:w-20 bg-[#FDBC1D]/50 rounded-full"></div>
               </div>
-              <p className="text-2xl text-gray-600 font-semibold max-w-3xl mx-auto">
+              <p className="text-lg sm:text-xl md:text-2xl text-gray-600 font-semibold max-w-3xl mx-auto px-4">
                 The world&apos;s premier programming competition that brings together the brightest minds
               </p>
             </div>
@@ -260,7 +260,7 @@ export default function Home() {
       </section>
 
       {/* What is ICPC Section */}
-      <section className="py-32 bg-gray-50 relative overflow-hidden">
+      <section className="py-16 sm:py-24 md:py-32 bg-gray-50 relative overflow-hidden">
         {/* Background Elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-10 left-10 w-64 h-64 bg-[#FDBC1D]/5 rounded-full blur-3xl"></div>
@@ -268,7 +268,7 @@ export default function Home() {
         </div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-16 md:gap-20 items-center">
             <FadeInLeft>
               <div className="space-y-8">
                 <div>
@@ -276,17 +276,17 @@ export default function Home() {
                     <FaCode className="w-6 h-6 text-[#FDBC1D]" />
                     <span className="text-[#143C68] font-semibold">The Olympics of Programming</span>
                   </div>
-                  <h2 className="text-6xl md:text-7xl font-bold text-[#143C68] mb-8">
+                  <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#143C68] mb-6 sm:mb-8">
                 What is ICPC?
               </h2>
-                  <div className="flex items-center gap-4 mb-8">
-                    <div className="h-1 w-16 bg-[#FDBC1D]/50 rounded-full"></div>
-                    <div className="h-2 w-24 bg-[#FDBC1D] rounded-full"></div>
-                    <div className="h-1 w-16 bg-[#FDBC1D]/50 rounded-full"></div>
+                  <div className="flex items-center gap-2 sm:gap-4 mb-6 sm:mb-8">
+                    <div className="h-1 w-12 sm:w-16 bg-[#FDBC1D]/50 rounded-full"></div>
+                    <div className="h-2 w-20 sm:w-24 bg-[#FDBC1D] rounded-full"></div>
+                    <div className="h-1 w-12 sm:w-16 bg-[#FDBC1D]/50 rounded-full"></div>
                   </div>
                 </div>
                 
-                <p className="text-2xl text-gray-700 leading-relaxed font-medium">
+                <p className="text-lg sm:text-xl md:text-2xl text-gray-700 leading-relaxed font-medium">
                 The International Collegiate Programming Contest (ICPC) isn&apos;t just another coding challenge; 
                   it&apos;s <span className="text-[#143C68] font-bold">the Olympics of programming</span> — the oldest, largest, and most prestigious 
                 competitive programming contest in the world.
@@ -358,7 +358,7 @@ export default function Home() {
       </section>
 
       {/* Why Join Section */}
-      <section className="py-32 bg-[#143C68] text-white relative overflow-hidden">
+      <section className="py-16 sm:py-24 md:py-32 bg-[#143C68] text-white relative overflow-hidden">
         {/* Background Elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-20 left-20 w-96 h-96 bg-[#FDBC1D]/10 rounded-full blur-3xl"></div>
@@ -367,20 +367,20 @@ export default function Home() {
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <FadeIn>
-            <div className="text-center mb-24">
-              <div className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-6 py-3 mb-8">
+            <div className="text-center mb-12 sm:mb-16 md:mb-24">
+              <div className="inline-flex items-center gap-2 sm:gap-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-4 sm:px-6 py-2 sm:py-3 mb-6 sm:mb-8">
                 <SparklesIcon className="w-6 h-6 text-[#FDBC1D]" />
                 <span className="text-white font-semibold">Transform Your Future</span>
               </div>
-              <h2 className="text-6xl md:text-7xl font-bold mb-8 text-white">
+              <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 sm:mb-8 text-white">
                 Why You Should Join?
               </h2>
-              <div className="flex items-center justify-center gap-4 mb-8">
-                <div className="h-1 w-20 bg-[#FDBC1D]/50 rounded-full"></div>
-                <div className="h-2 w-32 bg-[#FDBC1D] rounded-full"></div>
-                <div className="h-1 w-20 bg-[#FDBC1D]/50 rounded-full"></div>
+              <div className="flex items-center justify-center gap-2 sm:gap-4 mb-6 sm:mb-8">
+                <div className="h-1 w-12 sm:w-16 md:w-20 bg-[#FDBC1D]/50 rounded-full"></div>
+                <div className="h-2 w-24 sm:w-28 md:w-32 bg-[#FDBC1D] rounded-full"></div>
+                <div className="h-1 w-12 sm:w-16 md:w-20 bg-[#FDBC1D]/50 rounded-full"></div>
               </div>
-              <p className="text-2xl text-white/90 font-semibold max-w-3xl mx-auto">
+              <p className="text-lg sm:text-xl md:text-2xl text-white/90 font-semibold max-w-3xl mx-auto px-4">
                 Transform your skills, career, and future with the world&apos;s most prestigious programming competition
               </p>
             </div>
@@ -430,13 +430,13 @@ export default function Home() {
       </section>
 
       {/* How It Works Section */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-12 sm:py-16 md:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <div className="text-center mb-20">
-              <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">How It Works</h2>
-              <div className="h-2 w-32 bg-[#FDBC1D] mx-auto mb-8 rounded-full"></div>
-              <p className="text-2xl text-gray-600 font-semibold">Understanding the contest format</p>
+            <div className="text-center mb-12 sm:mb-16 md:mb-20">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6">How It Works</h2>
+              <div className="h-2 w-24 sm:w-32 bg-[#FDBC1D] mx-auto mb-6 sm:mb-8 rounded-full"></div>
+              <p className="text-lg sm:text-xl md:text-2xl text-gray-600 font-semibold px-4">Understanding the contest format</p>
             </div>
           </FadeIn>
           
@@ -480,10 +480,10 @@ export default function Home() {
           <FadeIn delay={0.8}>
             <div className="text-center mt-16">
               <Link
-                href="/how-it-works"
+                href="/registration"
                 className="inline-flex items-center gap-3 bg-[#143C68] text-white px-10 py-5 rounded-2xl text-xl font-bold hover:bg-[#1e4a7a] transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
               >
-                View Complete Details
+                Register Now
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
@@ -494,13 +494,13 @@ export default function Home() {
       </section>
 
       {/* Timeline Section */}
-      <section className="py-24 bg-white">
+      <section className="py-12 sm:py-16 md:py-24 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <div className="text-center mb-20">
-              <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">Timeline</h2>
-              <div className="h-2 w-32 bg-[#FDBC1D] mx-auto mb-8 rounded-full"></div>
-              <p className="text-2xl text-gray-600 font-semibold">Your journey to ICPC World Finals</p>
+            <div className="text-center mb-12 sm:mb-16 md:mb-20">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6">Timeline</h2>
+              <div className="h-2 w-24 sm:w-32 bg-[#FDBC1D] mx-auto mb-6 sm:mb-8 rounded-full"></div>
+              <p className="text-lg sm:text-xl md:text-2xl text-gray-600 font-semibold px-4">Your journey to ICPC World Finals</p>
             </div>
           </FadeIn>
           
@@ -511,7 +511,7 @@ export default function Home() {
             <div className="space-y-12">
               <FadeInLeft delay={0.1}>
                 <TimelineCard
-                  date="September 2025"
+                  date="11th November 2025"
                   title="Registrations Open"
                   align="left"
                   color="bg-[#143C68]"
@@ -519,37 +519,45 @@ export default function Home() {
               </FadeInLeft>
               <FadeInRight delay={0.2}>
                 <TimelineCard
-                  date="October–November 2025"
-                  title="Online Round (Optional)"
+                  date="10th December 2025"
+                  title="Registrations Close"
                   align="right"
                   color="bg-[#143C68]"
                 />
               </FadeInRight>
               <FadeInLeft delay={0.3}>
                 <TimelineCard
-                  date="December 2025 – January 2026"
-                  title="Sri Lanka Onsite Regional"
+                  date="December 14th 2025"
+                  title="Online Round"
                   align="left"
-                  color="bg-[#FDBC1D]"
-                  highlight={true}
+                  color="bg-[#143C68]"
                 />
               </FadeInLeft>
               <FadeInRight delay={0.4}>
                 <TimelineCard
-                  date="March 2026"
-                  title="ICPC Asia West"
+                  date="04th January 2026"
+                  title="Sri Lanka Onsite Regional"
                   align="right"
-                  color="bg-[#B22E1B]"
+                  color="bg-[#FDBC1D]"
+                  highlight={true}
                 />
               </FadeInRight>
               <FadeInLeft delay={0.5}>
                 <TimelineCard
-                  date="August 2026"
-                  title="ICPC World Finals"
+                  date="March 2026"
+                  title="ICPC Asia West"
                   align="left"
-                  color="bg-red-500"
+                  color="bg-[#B22E1B]"
                 />
               </FadeInLeft>
+              <FadeInRight delay={0.6}>
+                <TimelineCard
+                  date="August 2026"
+                  title="ICPC World Finals"
+                  align="right"
+                  color="bg-red-500"
+                />
+              </FadeInRight>
             </div>
           </div>
           
@@ -570,7 +578,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="relative py-32 overflow-hidden bg-[#FDBC1D]">
+      <section className="relative py-16 sm:py-24 md:py-32 overflow-hidden bg-[#FDBC1D]">
         {/* Background Elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-10 left-10 w-96 h-96 bg-[#143C68]/10 rounded-full blur-3xl"></div>
@@ -588,42 +596,42 @@ export default function Home() {
           </ScaleIn>
           
           <FadeIn delay={0.2}>
-            <h2 className="text-6xl md:text-8xl font-bold text-[#143C68] mb-8 drop-shadow-lg">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-[#143C68] mb-6 sm:mb-8 drop-shadow-lg px-4">
               Ready to Make History?
             </h2>
           </FadeIn>
           
           <FadeIn delay={0.4}>
-            <p className="text-2xl md:text-3xl text-[#143C68] mb-16 max-w-4xl mx-auto font-semibold leading-relaxed">
+            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-[#143C68] mb-12 sm:mb-16 max-w-4xl mx-auto font-semibold leading-relaxed px-4">
               Join ICPC Sri Lanka 2026 and represent your country on the world&apos;s biggest programming stage
             </p>
           </FadeIn>
           
           <ScaleIn delay={0.6}>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center w-full sm:w-auto">
             <Link
               href="/registration"
-                className="group relative inline-flex items-center gap-4 bg-[#143C68] text-white px-16 py-8 rounded-3xl text-2xl font-bold hover:bg-[#1e4a7a] transition-all duration-300 shadow-2xl hover:-translate-y-2"
+                className="group relative inline-flex items-center gap-3 sm:gap-4 bg-[#143C68] text-white px-8 sm:px-12 md:px-16 py-4 sm:py-6 md:py-8 rounded-2xl sm:rounded-3xl text-lg sm:text-xl md:text-2xl font-bold hover:bg-[#1e4a7a] transition-all duration-300 shadow-2xl hover:-translate-y-2 w-full sm:w-auto justify-center"
               >
-                <FaRocket className="w-8 h-8 group-hover:animate-bounce" />
+                <FaRocket className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 group-hover:animate-bounce" />
                 <span>Register Your Team Now</span>
-                <ArrowRightIcon className="w-8 h-8 group-hover:translate-x-1 transition-transform" />
+                <ArrowRightIcon className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 group-hover:translate-x-1 transition-transform" />
               </Link>
               
               <Link
                 href="/about"
-                className="group inline-flex items-center gap-4 bg-white/20 backdrop-blur-md border border-white/30 text-[#143C68] px-12 py-6 rounded-2xl text-xl font-bold hover:bg-white hover:text-[#143C68] transition-all duration-300 shadow-xl hover:-translate-y-1"
+                className="group inline-flex items-center gap-3 sm:gap-4 bg-white/20 backdrop-blur-md border border-white/30 text-[#143C68] px-8 sm:px-12 py-4 sm:py-6 rounded-2xl text-base sm:text-xl font-bold hover:bg-white hover:text-[#143C68] transition-all duration-300 shadow-xl hover:-translate-y-1 w-full sm:w-auto justify-center"
               >
-                <PlayIcon className="w-6 h-6" />
+                <PlayIcon className="w-5 h-5 sm:w-6 sm:h-6" />
                 <span>Learn More</span>
             </Link>
             </div>
           </ScaleIn>
           
           <FadeIn delay={0.8}>
-            <div className="mt-16 text-center">
-              <p className="text-lg text-[#143C68]/80 font-medium">
-                Registration opens in <span className="font-bold text-[#143C68]">September 2025</span>
+            <div className="mt-12 sm:mt-16 text-center px-4">
+              <p className="text-base sm:text-lg text-[#143C68]/80 font-medium">
+                Registration opens on <span className="font-bold text-[#143C68]">11th November 2025</span>
               </p>
             </div>
           </FadeIn>
