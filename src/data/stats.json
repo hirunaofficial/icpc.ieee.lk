@@ -1,0 +1,45 @@
+{
+  "global": {
+    "countries": {
+      "value": "100+",
+      "label": "Countries",
+      "description": "Participating",
+      "fullDescription": "From every continent"
+    },
+    "universities": {
+      "value": "3,000+",
+      "label": "Universities",
+      "description": "Worldwide",
+      "fullDescription": "Top institutions"
+    },
+    "students": {
+      "value": "60,000+",
+      "label": "Students",
+      "description": "Competing",
+      "fullDescription": "Future innovators"
+    }
+  },
+  "contest": {
+    "teamSize": {
+      "value": "3 Students",
+      "label": "Team Size",
+      "description": "from the same university"
+    },
+    "duration": {
+      "value": "5 Hours",
+      "label": "Duration",
+      "description": "of intense competition"
+    },
+    "problems": {
+      "value": "5-10",
+      "label": "Problems",
+      "description": "algorithmic challenges"
+    },
+    "format": {
+      "value": "Offline",
+      "label": "Format",
+      "description": "pure skill, no internet"
+    }
+  }
+}
+

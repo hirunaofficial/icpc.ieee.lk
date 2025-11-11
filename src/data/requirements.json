@@ -1,0 +1,49 @@
+{
+  "requirements": [
+    {
+      "id": "team-composition",
+      "icon": "FaUsers",
+      "title": "Team Composition",
+      "items": [
+        "3 students from the same university",
+        "All members must be currently enrolled",
+        "Undergraduate or graduate students eligible",
+        "Each student can only be on one team"
+      ]
+    },
+    {
+      "id": "coach",
+      "icon": "FaChalkboardTeacher",
+      "title": "Coach",
+      "items": [
+        "1 faculty member or staff as coach",
+        "Coach must be affiliated with the university",
+        "Coach handles team registration",
+        "Coach guides team preparation (optional)"
+      ]
+    },
+    {
+      "id": "eligibility",
+      "icon": "FaGraduationCap",
+      "title": "Eligibility",
+      "items": [
+        "Must be a university student",
+        "Valid university ID required",
+        "Follow ICPC eligibility rules",
+        "Check ICPC website for detailed rules"
+      ]
+    },
+    {
+      "id": "registration-fee",
+      "icon": "FaMoneyBill",
+      "title": "Registration Fee",
+      "items": [
+        "LKR 3,000 – 5,000 per team",
+        "Covers meals on contest day",
+        "Covers event logistics",
+        "Early bird discounts may apply"
+      ]
+    }
+  ]
+}
+

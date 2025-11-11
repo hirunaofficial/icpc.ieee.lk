@@ -1,0 +1,28 @@
+# robots.txt for ICPC Sri Lanka 2026
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://icpc.ieee.lk/sitemap.xml
+
+# Disallow crawling of specific paths (if any)
+# Disallow: /api/
+# Disallow: /admin/
+
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Crawl delay (optional)
+# Crawl-delay: 10
+
