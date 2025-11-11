@@ -34,7 +34,6 @@ export default function Navbar() {
             <NavLink href="/">Home</NavLink>
             <NavLink href="/about">About</NavLink>
             <NavLink href="/why-join">Why Join</NavLink>
-            <NavLink href="/how-it-works">How It Works</NavLink>
             <NavLink href="/timeline">Timeline</NavLink>
             <NavLink href="/gallery">Gallery</NavLink>
             <NavLink href="/faq">FAQ</NavLink>
@@ -74,7 +73,6 @@ export default function Navbar() {
               <MobileNavLink href="/" onClick={() => setIsMenuOpen(false)}>Home</MobileNavLink>
               <MobileNavLink href="/about" onClick={() => setIsMenuOpen(false)}>About</MobileNavLink>
               <MobileNavLink href="/why-join" onClick={() => setIsMenuOpen(false)}>Why Join</MobileNavLink>
-              <MobileNavLink href="/how-it-works" onClick={() => setIsMenuOpen(false)}>How It Works</MobileNavLink>
               <MobileNavLink href="/timeline" onClick={() => setIsMenuOpen(false)}>Timeline</MobileNavLink>
               <MobileNavLink href="/gallery" onClick={() => setIsMenuOpen(false)}>Gallery</MobileNavLink>
               <MobileNavLink href="/faq" onClick={() => setIsMenuOpen(false)}>FAQ</MobileNavLink>
