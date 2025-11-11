@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { FaFacebook, FaInstagram, FaLinkedin, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
-import { UserIcon, BuildingOfficeIcon } from '@heroicons/react/24/outline';
+import { UserIcon, BuildingOfficeIcon, HandRaisedIcon } from '@heroicons/react/24/outline';
 
 export default function Footer() {
   return (
@@ -65,7 +65,6 @@ export default function Footer() {
               <FooterLink href="/">Home</FooterLink>
               <FooterLink href="/about">About ICPC</FooterLink>
               <FooterLink href="/why-join">Why Join</FooterLink>
-              <FooterLink href="/how-it-works">How It Works</FooterLink>
               <FooterLink href="/timeline">Timeline</FooterLink>
               <FooterLink href="/gallery">Gallery</FooterLink>
               <FooterLink href="/faq">FAQ</FooterLink>
@@ -133,9 +132,26 @@ export default function Footer() {
                 <div>
                   <div className="text-xs sm:text-sm font-bold text-[#143C68] uppercase tracking-wider mb-2 sm:mb-3">Organized by</div>
                   <div className="text-base sm:text-lg md:text-xl font-bold text-black leading-tight">
-                    IEEE Young Professionals Sri Lanka
-                    <br />
                     IEEE CodeX Sri Lanka
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Supported By Section */}
+          <div className="mt-8 sm:mt-10 md:mt-12">
+            <div className="bg-white rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-xl">
+              <div className="flex items-start gap-4 sm:gap-6">
+                <div className="bg-[#FDBC1D] p-3 sm:p-4 rounded-xl sm:rounded-2xl">
+                  <HandRaisedIcon className="w-8 h-8 sm:w-10 sm:h-10 text-[#143C68]" />
+                </div>
+                <div>
+                  <div className="text-xs sm:text-sm font-bold text-[#143C68] uppercase tracking-wider mb-2 sm:mb-3">Supported by</div>
+                  <div className="text-base sm:text-lg md:text-xl font-bold text-black leading-tight">
+                    Electrical & Electronic Engineering Society (EEES), University of Peradeniya
+                    <br />
+                    Association of Computer Engineering Students (ACES), University of Peradeniya
                   </div>
                 </div>
               </div>
