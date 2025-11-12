@@ -77,7 +77,7 @@ export default function Timeline() {
                 <StaggerItem>
                   <TimelineEvent
                     date="December 14th 2025"
-                    title="Online Round"
+                    title="Preliminary Online Round"
                     description="An online preliminary round to help teams prepare and get familiar with the contest format."
                     icon={<FaLaptopCode className="w-8 h-8" />}
                     color="bg-[#143C68]"
@@ -153,7 +153,7 @@ export default function Timeline() {
               <div className="space-y-4 sm:space-y-6">
                 <QuickDate date="11th November 2025" event="Registrations Open" />
                 <QuickDate date="10th December 2025" event="Registrations Close" />
-                <QuickDate date="December 14th 2025" event="Online Round" />
+                <QuickDate date="December 14th 2025" event="Preliminary Online Round" />
                 <QuickDate date="04th January 2026" event="Sri Lanka Onsite Regional" highlight={true} />
                 <QuickDate date="March 2026" event="ICPC Asia West" />
                 <QuickDate date="August 2026" event="ICPC World Finals" />
