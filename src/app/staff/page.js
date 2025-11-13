@@ -206,10 +206,10 @@ export default function StaffPage() {
               <p className="text-gray-600">
                 For inquiries, please contact us at{' '}
                 <a
-                  href="mailto:icpc@sites.pdn.ac.lk"
+                  href="mailto:icpc@soc.pdn.ac.lk"
                   className="text-[#143C68] hover:text-[#FDBC1D] font-medium hover:underline"
                 >
-                   icpc@sites.pdn.ac.lk
+                   icpc@soc.pdn.ac.lk
                 </a>
               </p>
             </div>
