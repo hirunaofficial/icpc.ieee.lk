@@ -111,7 +111,7 @@ export default function AwardsSection() {
                       <span className="text-[#FDBC1D] font-bold text-sm">1</span>
                     </div>
                     <p className="text-gray-700 text-base sm:text-lg flex-1">
-                      No additional teams from the Champion Team's university
+                      No additional teams from the Champion Team&apos;s university
                     </p>
                   </li>
                   <li className="flex items-start gap-3">
