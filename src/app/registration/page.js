@@ -402,13 +402,29 @@ function PreliminaryRegistrationContent() {
         />
       </div>
       
-      <div className="pt-6 sm:pt-8 border-t-2 border-gray-200">
+      <div className="pt-6 sm:pt-8 border-t-2 border-gray-200 space-y-4">
         <button
           onClick={() => setShowRegistrationSteps(true)}
           className="w-full sm:w-auto px-8 sm:px-12 py-3 sm:py-4 bg-[#143C68] text-white rounded-xl sm:rounded-2xl text-base sm:text-lg md:text-xl font-bold hover:bg-[#1e4a7a] transition-all duration-300 hover:-translate-y-1 shadow-xl hover:shadow-2xl"
         >
           Proceed to Register
         </button>
+
+        <div className="flex items-center gap-3">
+          <div className="h-px flex-1 bg-gray-300"></div>
+          <span className="text-sm text-gray-500 font-medium">or</span>
+          <div className="h-px flex-1 bg-gray-300"></div>
+        </div>
+
+        <div className="flex justify-center">
+          <Link
+            href="/selection-rules"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 sm:px-12 py-3 sm:py-4 bg-white text-[#143C68] border-2 border-[#143C68] rounded-xl sm:rounded-2xl text-base sm:text-lg md:text-xl font-bold hover:bg-[#143C68] hover:text-white transition-all duration-300 hover:-translate-y-1 shadow-lg hover:shadow-2xl"
+          >
+            <FaTrophy className="w-5 h-5" />
+            View Selection & Advancement Rules
+          </Link>
+        </div>
       </div>
     </div>
   );
@@ -571,7 +587,7 @@ function RegionalRegistrationContent() {
         />
       </div>
       
-      <div className="pt-6 sm:pt-8 border-t-2 border-gray-200">
+      <div className="pt-6 sm:pt-8 border-t-2 border-gray-200 space-y-4">
         {/* TODO: Unlock this button when Regional Onsite Round registration opens */}
         <button
           disabled
@@ -579,6 +595,22 @@ function RegionalRegistrationContent() {
         >
           Proceed to Register (Coming Soon)
         </button>
+
+        <div className="flex items-center gap-3">
+          <div className="h-px flex-1 bg-gray-300"></div>
+          <span className="text-sm text-gray-500 font-medium">or</span>
+          <div className="h-px flex-1 bg-gray-300"></div>
+        </div>
+
+        <div className="flex justify-center">
+          <Link
+            href="/selection-rules"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 sm:px-12 py-3 sm:py-4 bg-white text-[#143C68] border-2 border-[#143C68] rounded-xl sm:rounded-2xl text-base sm:text-lg md:text-xl font-bold hover:bg-[#143C68] hover:text-white transition-all duration-300 hover:-translate-y-1 shadow-lg hover:shadow-2xl"
+          >
+            <FaTrophy className="w-5 h-5" />
+            View Selection & Advancement Rules
+          </Link>
+        </div>
       </div>
     </div>
   );
