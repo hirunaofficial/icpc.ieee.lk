@@ -188,6 +188,21 @@ export default function Registration() {
                   </>
                 }
               />
+              <InfoItem
+                icon={<FaTrophy className="w-6 h-6" />}
+                title="Selection & Advancement Rules"
+                content={
+                  <>
+                    <Link
+                      href="/selection-rules"
+                      className="text-[#143C68] font-bold underline hover:text-[#FDBC1D] transition-colors"
+                    >
+                      Click here
+                    </Link>
+                    {' '}to view detailed selection criteria and advancement rules to higher ICPC levels
+                  </>
+                }
+              />
             </div>
           </ScaleIn>
         </div>
