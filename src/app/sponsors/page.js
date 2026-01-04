@@ -126,7 +126,7 @@ export default function Sponsors() {
                   <h5 className="text-xl sm:text-2xl font-bold text-gray-600 mb-6 text-center">Silver Sponsors</h5>
                   <div className="flex flex-wrap justify-center gap-6 sm:gap-8">
                     <SponsorCard
-                      name="IES LYMS"
+                      name="IESL - Young Member's Section - YMS"
                       facebook="https://www.facebook.com/ieslyms"
                       linkedin="https://www.linkedin.com/company/ieslyms"
                     />
