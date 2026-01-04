@@ -1,6 +1,15 @@
 'use client';
 
-CPC Sri Lanka 2026
+import {
+  FaUsers,
+  FaTrophy,
+  FaBuilding,
+  FaGlobe,
+  FaLightbulb,
+  FaFacebook,
+  FaLinkedin
+} from 'react-icons/fa';
+import { FadeIn, StaggerContainer, StaggerItem } from '@/components/AnimatedSection';
 
 export default function Sponsors() {
   return (
@@ -45,7 +54,7 @@ export default function Sponsors() {
             <FadeIn delay={0.2}>
               <div className="mb-12 sm:mb-16">
                 <h4 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#143C68] mb-4 sm:mb-6 text-center px-4">
-                  Why Sponsor ICPC Sri Lanka 2026?
+                  Why Sponsor ICPC Sri Lanka 2025/2026?
                 </h4>
                 <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed text-center max-w-4xl mx-auto px-4">
                   ICPC Sri Lanka is the premier programming competition in the country, attracting the brightest minds from top universities. 
@@ -130,7 +139,7 @@ export default function Sponsors() {
             <FadeIn delay={0.5}>
               <div className="text-center pt-6 sm:pt-8 border-t-2 border-gray-200">
                 <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#143C68] mb-6 sm:mb-8 px-4">
-                  Partner with ICPC Sri Lanka 2026 and shape the future of technology in Sri Lanka.
+                  Partner with ICPC Sri Lanka 2025/2026 and shape the future of technology in Sri Lanka.
                 </p>
                 <a
                   href="mailto:icpc@soc.pdn.ac.lk"

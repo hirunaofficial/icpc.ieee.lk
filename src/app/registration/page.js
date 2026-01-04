@@ -233,7 +233,7 @@ export default function Registration() {
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Stay Connected</h2>
             <div className="h-2 w-24 bg-[#FDBC1D] mx-auto mb-8 rounded-full"></div>
             <p className="text-xl md:text-2xl text-white/90 mb-10 max-w-2xl mx-auto">
-              Follow us on social media for the latest updates, announcements, and important information about <br/>ICPC Sri Lanka 2026
+              Follow us on social media for the latest updates, announcements, and important information about <br/>ICPC Sri Lanka 2025/2026
             </p>
           </FadeIn>
           <FadeIn delay={0.2}>
