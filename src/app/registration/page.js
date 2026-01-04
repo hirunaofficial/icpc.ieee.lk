@@ -203,6 +203,24 @@ export default function Registration() {
                   </>
                 }
               />
+              <InfoItem
+                icon={<FaLightbulb className="w-6 h-6" />}
+                title="Online Preliminary Contest Guidelines"
+                content={
+                  <>
+                    Click{' '}
+                    <a
+                      href="https://drive.google.com/file/d/1rs1i6NcaWLWyGWoYKaSaJOS4y_40SzsN/view?usp=drivesdk"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#143C68] font-bold underline hover:text-[#FDBC1D] transition-colors"
+                    >
+                      here
+                    </a>
+                    {' '}to view the Online Preliminary Contest Guidelines
+                  </>
+                }
+              />
             </div>
           </ScaleIn>
         </div>
