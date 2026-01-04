@@ -203,6 +203,24 @@ export default function Registration() {
                   </>
                 }
               />
+              <InfoItem
+                icon={<FaLightbulb className="w-6 h-6" />}
+                title="Online Preliminary Contest Guidelines"
+                content={
+                  <>
+                    Click{' '}
+                    <a
+                      href="https://drive.google.com/file/d/1rs1i6NcaWLWyGWoYKaSaJOS4y_40SzsN/view?usp=drivesdk"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#143C68] font-bold underline hover:text-[#FDBC1D] transition-colors"
+                    >
+                      here
+                    </a>
+                    {' '}to view the Online Preliminary Contest Guidelines
+                  </>
+                }
+              />
             </div>
           </ScaleIn>
         </div>
@@ -215,7 +233,7 @@ export default function Registration() {
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Stay Connected</h2>
             <div className="h-2 w-24 bg-[#FDBC1D] mx-auto mb-8 rounded-full"></div>
             <p className="text-xl md:text-2xl text-white/90 mb-10 max-w-2xl mx-auto">
-              Follow us on social media for the latest updates, announcements, and important information about <br/>ICPC Sri Lanka 2026
+              Follow us on social media for the latest updates, announcements, and important information about <br/>ICPC Sri Lanka 2025/2026
             </p>
           </FadeIn>
           <FadeIn delay={0.2}>
@@ -364,19 +382,6 @@ function RegistrationTabs() {
 }
 
 function PreliminaryRegistrationContent() {
-  const [showRegistrationSteps, setShowRegistrationSteps] = useState(false);
-
-  if (showRegistrationSteps) {
-    return (
-      <div className="space-y-6 sm:space-y-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
-          <RegisterLocallyCard disabled={false} />
-          <RegisterGloballyCard />
-        </div>
-      </div>
-    );
-  }
-
   return (
     <div className="space-y-8">
       <div className="space-y-6">
@@ -404,10 +409,10 @@ function PreliminaryRegistrationContent() {
       
       <div className="pt-6 sm:pt-8 border-t-2 border-gray-200 space-y-4">
         <button
-          onClick={() => setShowRegistrationSteps(true)}
-          className="w-full sm:w-auto px-8 sm:px-12 py-3 sm:py-4 bg-[#143C68] text-white rounded-xl sm:rounded-2xl text-base sm:text-lg md:text-xl font-bold hover:bg-[#1e4a7a] transition-all duration-300 hover:-translate-y-1 shadow-xl hover:shadow-2xl"
+          disabled
+          className="w-full sm:w-auto px-8 sm:px-12 py-3 sm:py-4 bg-gray-400 text-white rounded-xl sm:rounded-2xl text-base sm:text-lg md:text-xl font-bold cursor-not-allowed opacity-60"
         >
-          Proceed to Register
+          Registration Closed
         </button>
 
         <div className="flex items-center gap-3">
