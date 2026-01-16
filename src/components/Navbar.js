@@ -38,7 +38,6 @@ export default function Navbar() {
             <NavLink href="/faq">FAQ</NavLink>
             <NavLink href="/gallery">Gallery</NavLink>
             <NavLink href="/qualified-teams">Qualified Teams</NavLink>
-            <NavLink href="/accommodation">Accommodation</NavLink>
             <NavLink href="/staff">Staff</NavLink>
             <NavLink href="/sponsors">Support Us</NavLink>
           </div>
@@ -81,7 +80,6 @@ export default function Navbar() {
               <MobileNavLink href="/faq" onClick={() => setIsMenuOpen(false)}>FAQ</MobileNavLink>
               <MobileNavLink href="/gallery" onClick={() => setIsMenuOpen(false)}>Gallery</MobileNavLink>
               <MobileNavLink href="/qualified-teams" onClick={() => setIsMenuOpen(false)}>Qualified Teams</MobileNavLink>
-              <MobileNavLink href="/accommodation" onClick={() => setIsMenuOpen(false)}>Accommodation</MobileNavLink>
               <MobileNavLink href="/staff" onClick={() => setIsMenuOpen(false)}>Staff</MobileNavLink>
               <MobileNavLink href="/sponsors" onClick={() => setIsMenuOpen(false)}>Support Us</MobileNavLink>
               <div className="px-4 pt-4 sm:pt-6">
