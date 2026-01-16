@@ -217,15 +217,7 @@ export default function Accommodation() {
 
 function HotelCard({ hotel }) {
   return (
-    <div className={`bg-white rounded-xl sm:rounded-2xl shadow-xl p-5 sm:p-6 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 h-full flex flex-col ${
-      hotel.featured ? 'border-2 border-[#FDBC1D] ring-2 ring-[#FDBC1D]/20' : 'border border-gray-200'
-    }`}>
-      {hotel.featured && (
-        <div className="bg-[#FDBC1D] text-[#143C68] text-xs font-bold px-3 py-1 rounded-full self-start mb-4">
-          RECOMMENDED
-        </div>
-      )}
-
+    <div className="bg-white rounded-xl sm:rounded-2xl shadow-xl p-5 sm:p-6 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 h-full flex flex-col border border-gray-200">
       <h4 className="text-lg sm:text-xl font-bold text-[#143C68] mb-4">{hotel.name}</h4>
 
       <div className="space-y-3 flex-1">
