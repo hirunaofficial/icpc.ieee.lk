@@ -1,7 +1,7 @@
 'use client';
 
 import { DocumentTextIcon } from '@heroicons/react/24/outline';
-import { FadeIn, SlideInLeft, SlideInRight, StaggerContainer, StaggerItem } from '@/components/AnimatedSection';
+import { FadeIn, StaggerContainer, StaggerItem } from '@/components/AnimatedSection';
 
 export default function DocumentsSection() {
   const documents = [
@@ -10,7 +10,7 @@ export default function DocumentsSection() {
       url: 'https://drive.google.com/file/d/1NQtW5Jg9H8nl9mQ_KhBOpNPo_DdYBlRp/view?usp=drivesdk',
     },
     {
-      title: 'Contest Guidelines',
+      title: 'Regional Onsite Contest Guidelines',
       url: 'https://drive.google.com/file/d/1RrhpVAtts54P2jNeii1sR8Y_ln7-2zlh/view?usp=drivesdk',
     },
   ];

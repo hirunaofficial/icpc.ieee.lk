@@ -75,6 +75,7 @@ export default function Footer() {
               <FooterLink href="/gallery">Gallery</FooterLink>
               <FooterLink href="/qualified-teams">Qualified Teams</FooterLink>
               <FooterLink href="/accommodation">Accommodation</FooterLink>
+              <FooterLink href="/documents">Documents</FooterLink>
               <FooterLink href="/staff">Staff</FooterLink>
               <FooterLink href="/sponsors">Support Us</FooterLink>
             </ul>
